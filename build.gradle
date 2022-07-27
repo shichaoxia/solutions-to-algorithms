@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'de.undercouch.download' version '5.1.0'
+}
+
+sourceSets {
+    main {
+         java {
+            srcDirs = ['src']
+         }
+    }
+
+    test {
+        java {
+            srcDirs = ['test']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Copy from JUnit Gradle sample
+    // https://github.com/junit-team/junit5-samples/tree/main/junit5-jupiter-starter-gradle
+    testImplementation(platform('org.junit:junit-bom:5.9.0'))
+	testImplementation('org.junit.jupiter:junit-jupiter')
+
+    implementation files('lib/algs4.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task downloadZipFile(type: Download) {
+    src 'https://algs4.cs.princeton.edu/code/algs4-data.zip'
+    dest new File('algs4-data.zip')
+    overwrite false
+}
+
+task downloadAndUnzipTestDataFile(dependsOn: downloadZipFile, type: Copy) {
+    from zipTree(downloadZipFile.dest)
+    into new File('./')
+}
+
+task downloadLib(type: Download) {
+    src 'https://algs4.cs.princeton.edu/code/algs4.jar'
+    dest new File('lib/algs4.jar')
+    overwrite false
+}
