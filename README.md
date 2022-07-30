@@ -1,6 +1,6 @@
 # Algorithms
 
-Solution codes for the Algorithm 4th written by Robert Sedgewick.
+Solution codes for the Algorithms 4th written by Robert Sedgewick.
 
 Prerequisite for running tests：
 
