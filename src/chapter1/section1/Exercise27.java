@@ -37,10 +37,8 @@ public class Exercise27 {
     }
 
     public static void main(String[] args) {
-        // ;
         StdOut.printf("Non-memorized calculation result: %f%n", binomial(10, 5, 0.25));
         StdOut.printf("Called times: %d%n", calledTimes);
-
         StdOut.printf("Memorized calculation result: %f%n", memorizedBinomial(10, 5, 0.25));
         StdOut.printf("Calculate times: %d%n", calculateTimes);
         StdOut.printf("Number of cached results: %d%n", cache.size());
