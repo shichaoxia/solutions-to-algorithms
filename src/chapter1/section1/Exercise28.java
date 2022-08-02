@@ -1,11 +1,6 @@
 package chapter1.section1;
 
-<<<<<<< HEAD
-import java.util.HashSet;
-import java.util.Set;
-=======
 import java.util.Arrays;
->>>>>>> e84af18 (Chapter 1 exercise 28)
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
