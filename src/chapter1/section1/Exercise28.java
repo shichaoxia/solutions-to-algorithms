@@ -6,31 +6,34 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise28 {
-    public static void main(String[] args) {
-        int[] whitelist = new In(args[0]).readAllInts();
-        StdOut.printf("%10s%s%n", "Original: ", Arrays.toString(whitelist));
 
-        Arrays.sort(whitelist);
-        StdOut.printf("%10s%s%n", "Sorted: ", Arrays.toString(whitelist));
-
-        int[] tmp = new int[whitelist.length];
+    public static int[] removeDuplicate(int[] a) {
+        Arrays.sort(a);
+        int[] tmp = new int[a.length];
         int destIndex = 0;
 
-        for (int i = 0; i < whitelist.length; i++) {
+        for (int i = 0; i < a.length; i++) {
             // The last item has no follow-up, just copy it
-            if (i == whitelist.length - 1) {
-                tmp[destIndex] = whitelist[i];
+            if (i == a.length - 1) {
+                tmp[destIndex] = a[i];
                 break;
             }
-            // Ignore the same item as the latter
-            if (whitelist[i] == whitelist[i + 1])
+            // Ignore elements that are identical to the latter
+            if (a[i] == a[i + 1])
                 continue;
-            tmp[destIndex] = whitelist[i];
+            tmp[destIndex] = a[i];
             destIndex += 1;
         }
 
         int tmpLength = destIndex + 1;
-        whitelist = Arrays.copyOf(tmp, tmpLength);
+        return Arrays.copyOf(tmp, tmpLength);
+    }
+
+    public static void main(String[] args) {
+        int[] whitelist = new In(args[0]).readAllInts();
+        StdOut.printf("%10s%s%n", "Original: ", Arrays.toString(whitelist));
+
+        whitelist = removeDuplicate(whitelist);
         StdOut.printf("%10s%s%n", "Removed: ", Arrays.toString(whitelist));
     }
 }
