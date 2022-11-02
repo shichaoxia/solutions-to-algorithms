@@ -2,6 +2,8 @@
 
 Solution codes for the Algorithms 4th written by Robert Sedgewick.
 
+Here is the complete solutions with exercises and explanations.
+
 Prerequisite for running tests：
 
 ```shell
@@ -16,5 +18,4 @@ gradle downloadAndUnzipTestDataFile
 Available references:
 
 * https://github.com/reneargento/algorithms-sedgewick-wayne
-* https://github.com/aistrate/AlgorithmsSedgewick
-* [Princeton University's book site](https://algs4.cs.princeton.edu/home/)
+* [Princeton University's book home](https://algs4.cs.princeton.edu/home/)
