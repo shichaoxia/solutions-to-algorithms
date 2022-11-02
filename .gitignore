@@ -6,6 +6,4 @@ build
 
 bin/
 lib/
-.vscode/
-algs4-data.zip
 algs4-data/
