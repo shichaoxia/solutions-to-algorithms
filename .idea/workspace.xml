@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25cd2832-3a65-4427-88c4-1a2513c71ab5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chapter1/section1/Exercise23.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter1/section1/Exercise23.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +59,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Less&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -69,17 +67,20 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="chapter1.section3" />
+      <recent name="chapter1.section4.exercise34" />
+      <recent name="chapter1.section4.exercise31" />
       <recent name="chapter1.section4.exercise21" />
       <recent name="chapter1.section4.exercise20" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FibonacciSearchTest.search">
-    <configuration name="FibonacciSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise21.FibonacciSearch" />
+  <component name="RunManager" selected="Application.CouponCollectorProblem">
+    <configuration name="BirthdayProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise44.BirthdayProblem" />
       <module name="algorithms-sedgewick.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter1.section4.exercise21.*" />
+          <option name="PATTERN" value="chapter1.section4.exercise44.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,98 +88,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BitonicSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;chapter1.section4.exercise20.BitonicSearchTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BitonicSearchTest.searchMaximum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;chapter1.section4.exercise20.BitonicSearchTest.searchMaximum&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FibonacciSearchTest.search" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;chapter1.section4.exercise21.FibonacciSearchTest.search&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FibonacciSearchTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms-sedgewick.test" />
+    <configuration name="CouponCollectorProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise45.CouponCollectorProblem" />
+      <module name="algorithms-sedgewick.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter1.section4.exercise21.*" />
+          <option name="PATTERN" value="chapter1.section4.exercise45.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chapter1.section4.exercise21" />
-      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise21.FibonacciSearchTest" />
-      <option name="METHOD_NAME" value="search" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProblemSizes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise42.ProblemSizes" />
+      <module name="algorithms-sedgewick.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter1.section4.exercise42.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResizingArraysVersusLinkedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise43.ResizingArraysVersusLinkedLists" />
+      <module name="algorithms-sedgewick.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter1.section4.exercise43.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunningTimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter1.section4.exercise41.RunningTimes" />
+      <module name="algorithms-sedgewick.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter1.section4.exercise41.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BirthdayProblem" />
+      <item itemvalue="Application.CouponCollectorProblem" />
+      <item itemvalue="Application.ProblemSizes" />
+      <item itemvalue="Application.ResizingArraysVersusLinkedLists" />
+      <item itemvalue="Application.RunningTimes" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FibonacciSearchTest.search" />
-        <item itemvalue="JUnit.FibonacciSearchTest.search" />
-        <item itemvalue="Application.FibonacciSearch" />
-        <item itemvalue="Gradle.BitonicSearchTest" />
-        <item itemvalue="Gradle.BitonicSearchTest.searchMaximum" />
+        <item itemvalue="Application.CouponCollectorProblem" />
+        <item itemvalue="Application.BirthdayProblem" />
+        <item itemvalue="Application.ResizingArraysVersusLinkedLists" />
+        <item itemvalue="Application.ProblemSizes" />
+        <item itemvalue="Application.RunningTimes" />
       </list>
     </recent_temporary>
   </component>
@@ -192,6 +167,9 @@
       <updated>1667290009416</updated>
       <workItem from="1667290012439" duration="25324000" />
       <workItem from="1667375383228" duration="1807000" />
+      <workItem from="1667461298165" duration="56237000" />
+      <workItem from="1668152849374" duration="20984000" />
+      <workItem from="1668570371974" duration="5000" />
     </task>
     <servers />
   </component>
@@ -216,6 +194,16 @@
           <url>file://$PROJECT_DIR$/test/chapter1/section4/exercise21/FibonacciSearchTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chapter1/section4/exercise29/Steque.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chapter1/section4/exercise40/DoublingRatio.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
