@@ -1,4 +1,4 @@
-package chapter1.section3.Exercise31;
+package chapter1.section3.exercise31;
 
 import java.util.Iterator;
 

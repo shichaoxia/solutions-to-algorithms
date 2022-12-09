@@ -1,4 +1,4 @@
-package chapter1.section3.Exercise50;
+package chapter1.section3.exercise50;
 
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;

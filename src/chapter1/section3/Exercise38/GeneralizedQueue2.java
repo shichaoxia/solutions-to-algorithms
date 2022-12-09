@@ -1,4 +1,4 @@
-package chapter1.section3.Exercise38;
+package chapter1.section3.exercise38;
 
 import edu.princeton.cs.algs4.StdOut;
 

@@ -1,4 +1,4 @@
-package chapter1.section3.Exercise35;
+package chapter1.section3.exercise35;
 
 import chapter1.section3.Queue;
 import edu.princeton.cs.algs4.StdOut;

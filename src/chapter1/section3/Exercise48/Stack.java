@@ -1,6 +1,6 @@
-package chapter1.section3.Exercise48;
+package chapter1.section3.exercise48;
 
-import chapter1.section3.Exercise33.Deque;
+import chapter1.section3.exercise33.Deque;
 
 public class Stack<Item> {
 

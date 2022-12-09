@@ -35,11 +35,17 @@ public class QuickUnionUF {
         return find(p) == find(q);
     }
 
+    /**
+     * Find p's root
+     */
     public int find(int p) {
-        while (p != id[p]) p = id[p];
-        return p;
+        if (p == id[p]) return p;
+        else return find(id[p]);
     }
 
+    /**
+     * Make p's root point to q's root
+     */
     public void union(int p, int q) {
         int pRoot = find(p);
         int qRoot = find(q);

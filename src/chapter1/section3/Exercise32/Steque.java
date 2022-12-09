@@ -1,8 +1,8 @@
-package chapter1.section3.Exercise32;
+package chapter1.section3.exercise32;
 
 import java.util.Iterator;
 
-import chapter1.section3.Exercise31.LinkedList;
+import chapter1.section3.exercise31.LinkedList;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Steque<Item> implements Iterable<Item> {

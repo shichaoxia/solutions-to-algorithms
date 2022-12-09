@@ -35,26 +35,20 @@ public class QuickFindUF {
         return find(p) == find(q);
     }
 
-    /**
-     * Use one array access
-     */
     public int find(int p) {
         return id[p];
     }
 
     /**
-     * Use between N + 3 and 2N + 1 array accesses
+     * Assign q's id to p (together with other sites in the same component)
      */
     public void union(int p, int q) {
-        int pID = find(p);  // One access
-        int qID = find(q);  // One access
+        int pID = find(p);
+        int qID = find(q);
 
         if (pID == qID) return;
         for (int i = 0; i < id.length; i++)
-            // Iterating over all elements of the array uses N accesses.
             if (id[i] == pID) {
-                // Write only one element using one read. (2+N+1)
-                // Or write all remaining elements using N-1 accesses. (2+N+N-1)
                 id[i] = qID;
             }
         count--;

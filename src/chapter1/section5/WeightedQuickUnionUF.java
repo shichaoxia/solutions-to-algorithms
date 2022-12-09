@@ -5,13 +5,15 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class WeightedQuickUnionUF {
     private final int[] id;
+    private final int[] sz;
     private int count;
 
     public WeightedQuickUnionUF(int N) {
         count = N;
         id = new int[N];
-        for (int i = 0; i < N; i++)
-            id[i] = i;
+        for (int i = 0; i < N; i++) id[i] = i;
+        sz = new int[N];
+        for (int i = 0; i < N; i++) sz[i] = 1;
     }
 
     public static void main(String[] args) {
@@ -36,19 +38,24 @@ public class WeightedQuickUnionUF {
     }
 
     public int find(int p) {
-        while (p != id[p]) p = id[p];
-        return p;
+        if (p == id[p]) return p;
+        else return find(id[p]);
     }
 
+    /**
+     * Make the root with small sz point to the root with large sz
+     */
     public void union(int p, int q) {
         int pRoot = find(p);
         int qRoot = find(q);
-
         if (pRoot == qRoot) return;
 
-        id[pRoot] = qRoot;
+        int smaller = sz[pRoot] <= sz[qRoot] ? pRoot : qRoot;
+        int larger = smaller == pRoot ? qRoot : pRoot;
+
+        id[smaller] = larger;
+        sz[larger] += sz[smaller];
 
         count--;
     }
-
 }

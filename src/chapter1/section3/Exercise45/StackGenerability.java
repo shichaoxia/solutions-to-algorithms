@@ -1,4 +1,4 @@
-package chapter1.section3.Exercise45;
+package chapter1.section3.exercise45;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;

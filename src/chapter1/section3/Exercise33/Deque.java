@@ -1,8 +1,8 @@
-package chapter1.section3.Exercise33;
+package chapter1.section3.exercise33;
 
 import java.util.Iterator;
 
-import chapter1.section3.Exercise31.LinkedList;
+import chapter1.section3.exercise31.LinkedList;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Deque<Item> implements Iterable<Item> {
