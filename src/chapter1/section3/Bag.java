@@ -12,10 +12,10 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     public void add(Item item) {
-        Node oldfirst = first;
+        Node oldFirst = first;
         first = new Node();
         first.item = item;
-        first.next = oldfirst;
+        first.next = oldFirst;
     }
 
     public Iterator<Item> iterator() {

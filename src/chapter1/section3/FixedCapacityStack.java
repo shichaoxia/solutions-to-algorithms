@@ -1,7 +1,7 @@
 package chapter1.section3;
 
 public class FixedCapacityStack<Item> {
-    private Item[] a; // stack entries
+    private final Item[] a; // stack entries
     private int N; // size public
 
     @SuppressWarnings("unchecked")

@@ -4,19 +4,16 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 
+
 public class Stack<Item> implements Iterable<Item> {
 
     private Node first;
     private int N;
 
-    private class Node {
-        Item item;
-        Node next;
-    }
-
     public Stack() {
     }
 
+    @SuppressWarnings("CopyConstructorMissesField")
     public Stack(Stack<Item> s) {
         Stack<Item> tmp = new Stack<>();
         for (Item item : s) {
@@ -25,6 +22,20 @@ public class Stack<Item> implements Iterable<Item> {
         for (Item item : tmp) {
             push(item);
         }
+    }
+
+    public static void main(String[] args) {
+        Stack<String> s = new Stack<>();
+        s.push("a");
+        s.push("b");
+        s.push("c");
+        StdOut.println("s: " + s);
+
+        Stack<String> t = new Stack<>(s);
+        s.pop();
+        s.pop();
+        StdOut.println("s: " + s);
+        StdOut.println("t: " + t);
     }
 
     public boolean isEmpty() {
@@ -36,10 +47,10 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     public void push(Item item) {
-        Node oldfirst = first;
+        Node oldFirst = first;
         first = new Node();
         first.item = item;
-        first.next = oldfirst;
+        first.next = oldFirst;
         N++;
     }
 
@@ -50,24 +61,31 @@ public class Stack<Item> implements Iterable<Item> {
         return item;
     }
 
+    @SuppressWarnings("unused")
     public Item peek() {
         return first.item;
     }
 
+    @SuppressWarnings("DuplicatedCode")
     @Override
     public String toString() {
         Node current = first;
-        String s = "";
+        StringBuilder s = new StringBuilder();
         while (current != null) {
-            s = current.item + " " + s;
+            s.insert(0, current.item + " ");
             current = current.next;
         }
-        s = s.stripTrailing();
+        s = new StringBuilder(s.toString().stripTrailing());
         return "Stack [" + s + "](top) @" + System.identityHashCode(this);
     }
 
     public Iterator<Item> iterator() {
         return new ListIterator();
+    }
+
+    private class Node {
+        Item item;
+        Node next;
     }
 
     private class ListIterator implements Iterator<Item> {
@@ -85,19 +103,5 @@ public class Stack<Item> implements Iterable<Item> {
             current = current.next;
             return item;
         }
-    }
-
-    public static void main(String[] args) {
-        Stack<String> s = new Stack<>();
-        s.push("a");
-        s.push("b");
-        s.push("c");
-        StdOut.println("s: " + s);
-
-        Stack<String> t = new Stack<>(s);
-        s.pop();
-        s.pop();
-        StdOut.println("s: " + s);
-        StdOut.println("t: " + t);
     }
 }

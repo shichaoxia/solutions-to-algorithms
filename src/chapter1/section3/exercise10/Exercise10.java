@@ -13,10 +13,8 @@ public class Exercise10 {
         for (String item : items) {
             if (Pattern.matches("\\d+", item))
                 vals.push(item);
-            else if (Pattern.matches("[+\\-\\*/]", item))
+            else if (Pattern.matches("[+\\-*/]", item))
                 ops.push(item);
-            else if (Pattern.matches("\\(", item))
-                continue;
             else if (Pattern.matches("\\)", item)) {
                 String val2 = vals.pop();
                 String val1 = vals.pop();

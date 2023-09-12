@@ -21,7 +21,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
         return last - first;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "ManualArrayCopy", "DuplicatedCode"})
     private void resize(int max) {
         Item[] temp = (Item[]) new Object[max];
         for (int i = first; i < last; i++) {
@@ -39,6 +39,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
         a[last++] = item;
     }
 
+    @SuppressWarnings("DuplicatedCode")
     public Item dequeue() {
         if (size() == 0)
             return null;
@@ -59,6 +60,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
         a[first] = temp;
     }
 
+    @SuppressWarnings("unused")
     public Item sample() {
         Item item = dequeue();
         enqueue(item);
@@ -72,7 +74,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
 
     private class RandomIterator implements Iterator<Item> {
 
-        private Item[] randomA = Arrays.copyOfRange(a, first, last);
+        private final Item[] randomA = Arrays.copyOfRange(a, first, last);
         private int current = 0;
 
         public RandomIterator() {

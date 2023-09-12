@@ -2,6 +2,7 @@ package chapter1.section4.exercise16;
 
 import java.util.Arrays;
 
+@SuppressWarnings("unused")
 public class ClosestPair {
 
     public static Pair find(double[] a) {
@@ -21,6 +22,6 @@ public class ClosestPair {
         return new Pair(l, r);
     }
 
-    private static record Pair(double l, double r) {
+    private record Pair(double l, double r) {
     }
 }

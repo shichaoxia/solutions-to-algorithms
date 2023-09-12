@@ -9,7 +9,7 @@ public class Exercise29 {
             Node next;
         }
 
-        private Node last;
+        private final Node last;
         private int N;
 
         public CircularLinkedList() {

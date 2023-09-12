@@ -6,7 +6,7 @@ import chapter1.section3.exercise31.LinkedList;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Steque<Item> implements Iterable<Item> {
-    private LinkedList<Item> l;
+    private final LinkedList<Item> l;
 
     public Steque() {
         l = new LinkedList<>();

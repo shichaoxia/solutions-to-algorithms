@@ -5,8 +5,8 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise44 {
     public static class Buffer {
-        private Stack<Character> left;
-        private Stack<Character> right;
+        private final Stack<Character> left;
+        private final Stack<Character> right;
 
         public Buffer() {
             left = new Stack<>();
@@ -15,10 +15,6 @@ public class Exercise44 {
 
         public void insert(char c) {
             left.push(c);
-        }
-
-        public char delete() {
-            return left.pop();
         }
 
         public void left(int k) {
@@ -43,16 +39,16 @@ public class Exercise44 {
 
         @Override
         public String toString() {
-            String s = "";
+            StringBuilder s = new StringBuilder();
             Stack<Character> tmp = new Stack<>();
             for (Character c : left)
                 tmp.push(c);
             for (Character c : tmp)
-                s += c;
-            s += "|";
+                s.append(c);
+            s.append("|");
             for (Character c : right)
-                s += c;
-            return s;
+                s.append(c);
+            return s.toString();
         }
     }
 

@@ -4,6 +4,7 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("DuplicatedCode")
 public class Queue<Item> implements Iterable<Item> {
     private Node first;
     private Node last;
@@ -29,14 +30,14 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     public void enqueue(Item item) {
-        Node oldlast = last;
+        Node oldLast = last;
         last = new Node();
         last.item = item;
         last.next = null;
         if (isEmpty())
             first = last;
         else
-            oldlast.next = last;
+            oldLast.next = last;
         N++;
     }
 
@@ -52,12 +53,12 @@ public class Queue<Item> implements Iterable<Item> {
     @Override
     public String toString() {
         Node current = first;
-        String s = "";
+        StringBuilder s = new StringBuilder();
         while (current != null) {
-            s += " " + current.item;
+            s.append(" ").append(current.item);
             current = current.next;
         }
-        s = s.stripLeading();
+        s = new StringBuilder(s.toString().stripLeading());
         return "Queue <[" + s + "]<@" + System.identityHashCode(this);
     }
 

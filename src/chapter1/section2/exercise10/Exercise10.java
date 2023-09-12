@@ -9,7 +9,7 @@ public class Exercise10 {
     public static class VisualCounter {
         final private int max;
         private int total;
-        private int[] totalHistory;
+        private final int[] totalHistory;
         private int opNum;
 
         VisualCounter(int N, int max) {

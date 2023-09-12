@@ -7,7 +7,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Deque<Item> implements Iterable<Item> {
 
-    private LinkedList<Item> l;
+    private final LinkedList<Item> l;
 
     public Deque() {
         l = new LinkedList<>();

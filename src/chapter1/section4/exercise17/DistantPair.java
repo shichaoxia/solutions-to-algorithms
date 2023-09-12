@@ -5,22 +5,21 @@ import edu.princeton.cs.algs4.StdOut;
 public class DistantPair {
 
     public static Pair find(double[] a) {
-        int N = a.length;
 
         double smallest = a[0];
         double biggest = a[0];
 
-        for (int i = 0; i < N; i++) {
-            if (a[i] < smallest)
-                smallest = a[i];
-            if (a[i] > biggest)
-                biggest = a[i];
+        for (double v : a) {
+            if (v < smallest)
+                smallest = v;
+            if (v > biggest)
+                biggest = v;
         }
 
         return new Pair(smallest, biggest);
     }
 
-    private static record Pair(double l, double r) {
+    private record Pair(double l, double r) {
     }
 
     public static void main(String[] args) {

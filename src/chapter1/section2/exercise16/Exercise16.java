@@ -23,14 +23,6 @@ public class Exercise16 {
             this.denominator = lp.b;
         }
 
-        public long numerator() {
-            return numerator;
-        }
-
-        public long denominator() {
-            return denominator;
-        }
-
         public Rational plus(Rational b) {
             return new Rational(this.numerator * b.denominator + b.numerator * this.denominator,
                     this.denominator * b.denominator);
@@ -85,7 +77,7 @@ public class Exercise16 {
         }
     }
 
-    public static record LongPair(long a, long b) {
+    public record LongPair(long a, long b) {
     }
 
 }

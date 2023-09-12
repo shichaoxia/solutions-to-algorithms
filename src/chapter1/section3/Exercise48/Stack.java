@@ -2,9 +2,10 @@ package chapter1.section3.exercise48;
 
 import chapter1.section3.exercise33.Deque;
 
+@SuppressWarnings("unused")
 public class Stack<Item> {
 
-    private Deque<Item> q = new Deque<>();
+    private final Deque<Item> q = new Deque<>();
     private int N1;
     private int N2;
 

@@ -5,8 +5,9 @@ import java.util.Arrays;
 import edu.princeton.cs.algs4.StdOut;
 
 public class StaticSETofInts {
-    private int[] a;
+    private final int[] a;
 
+    @SuppressWarnings("ManualArrayCopy")
     public StaticSETofInts(int[] keys) {
         a = new int[keys.length];
         for (int i = 0; i < keys.length; i++)
@@ -14,10 +15,12 @@ public class StaticSETofInts {
         Arrays.sort(a);
     }
 
+    @SuppressWarnings("unused")
     public boolean contains(int key) {
         return rank(key) != -1;
     }
 
+    @SuppressWarnings("DuplicatedCode")
     private int rank(int key) {
         int lo = 0;
         int hi = a.length - 1;

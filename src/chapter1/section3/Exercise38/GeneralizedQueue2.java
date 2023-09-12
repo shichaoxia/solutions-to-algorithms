@@ -2,9 +2,10 @@ package chapter1.section3.exercise38;
 
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("UnusedReturnValue")
 public class GeneralizedQueue2<Item> {
 
-    private LinkedList<Item> l = new LinkedList<>();
+    private final LinkedList<Item> l = new LinkedList<>();
 
     public boolean isEmpty() {
         return l.size() == 0;

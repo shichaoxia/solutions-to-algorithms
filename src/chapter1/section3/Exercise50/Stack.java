@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("unused")
 public class Stack<Item> implements Iterable<Item> {
 
     private class Node {
@@ -25,10 +26,10 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     public void push(Item item) {
-        Node oldfirst = first;
+        Node oldFirst = first;
         first = new Node();
         first.item = item;
-        first.next = oldfirst;
+        first.next = oldFirst;
         N++;
         operationTimes++;
     }
@@ -48,12 +49,12 @@ public class Stack<Item> implements Iterable<Item> {
     @Override
     public String toString() {
         Node current = first;
-        String s = "";
+        StringBuilder s = new StringBuilder();
         while (current != null) {
-            s = current.item + " " + s;
+            s.insert(0, current.item + " ");
             current = current.next;
         }
-        s = s.stripTrailing();
+        s = new StringBuilder(s.toString().stripTrailing());
         return "Stack [" + s + "](top) @" + System.identityHashCode(this);
     }
 
@@ -64,7 +65,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     private class ReversedIterator implements Iterator<Item> {
         private Node current = first;
-        private int operatedTimes = operationTimes;
+        private final int operatedTimes = operationTimes;
 
         @Override
         public boolean hasNext() {

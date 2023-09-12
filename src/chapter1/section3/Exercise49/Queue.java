@@ -5,8 +5,8 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Queue<Item> {
 
-    private Stack<Item> s1 = new Stack<>();
-    private Stack<Item> s2 = new Stack<>();
+    private final Stack<Item> s1 = new Stack<>();
+    private final Stack<Item> s2 = new Stack<>();
     private int N;
 
     public boolean isEmpty() {

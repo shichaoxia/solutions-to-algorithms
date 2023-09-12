@@ -3,7 +3,7 @@ package chapter1.section3.exercise1;
 public class Exercise1 {
     public static class FixedCapacityStackOfStrings {
 
-        private String[] a; // stack entries
+        private final String[] a; // stack entries
         private int N; // size
 
         public FixedCapacityStackOfStrings(int cap) {

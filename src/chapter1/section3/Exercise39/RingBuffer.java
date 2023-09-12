@@ -5,8 +5,8 @@ import java.util.Arrays;
 import edu.princeton.cs.algs4.StdOut;
 
 public class RingBuffer<Item> {
-    private int N;
-    private Item[] a;
+    private final int N;
+    private final Item[] a;
     private int first = -1;  // -1 means empty
     private int last = -1;
 

@@ -5,7 +5,9 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
+@SuppressWarnings("DuplicatedCode")
 public class DoublingRatio {
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static double timeTrial(int N) {
         int MAX = 1_000_000;
         int[] a = new int[N];
@@ -16,6 +18,7 @@ public class DoublingRatio {
         return timer.elapsedTime();
     }
 
+    @SuppressWarnings("InfiniteLoopStatement")
     public static void main(String[] args) {
         int trialTimes = Integer.parseInt(args[0]);
         double prev = timeTrial(125);

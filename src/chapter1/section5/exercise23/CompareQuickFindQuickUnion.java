@@ -9,6 +9,7 @@ import edu.princeton.cs.algs4.Stopwatch;
 
 import java.util.Arrays;
 
+@SuppressWarnings("DuplicatedCode")
 public class CompareQuickFindQuickUnion {
     public static void main(String[] args) {
         int trailsNum = Integer.parseInt(args[0]);

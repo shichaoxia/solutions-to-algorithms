@@ -29,8 +29,7 @@ public class RandomBag<Item> implements Iterable<Item> {
     @SuppressWarnings("unchecked")
     private void resize(int max) {
         Item[] temp = (Item[]) new Object[max];
-        for (int i = 0; i < N; i++)
-            temp[i] = a[i];
+        if (N >= 0) System.arraycopy(a, 0, temp, 0, N);
         a = temp;
     }
 
@@ -40,7 +39,7 @@ public class RandomBag<Item> implements Iterable<Item> {
     }
 
     private class RandomIterator implements Iterator<Item> {
-        private Item[] randomA = Arrays.copyOf(a, N);
+        private final Item[] randomA = Arrays.copyOf(a, N);
         private int current = 0;
 
         public RandomIterator() {

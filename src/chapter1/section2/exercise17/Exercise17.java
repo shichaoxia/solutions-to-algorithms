@@ -2,6 +2,7 @@ package chapter1.section2.exercise17;
 
 public class Exercise17 {
 
+    @SuppressWarnings("UnusedReturnValue")
     public static class Rational {
         private final long numerator;
         private final long denominator;
@@ -21,14 +22,6 @@ public class Exercise17 {
             else
                 this.numerator = lp.a;
             this.denominator = lp.b;
-        }
-
-        public long numerator() {
-            return numerator;
-        }
-
-        public long denominator() {
-            return denominator;
         }
 
         public Rational plus(Rational b) {
@@ -89,7 +82,7 @@ public class Exercise17 {
         }
     }
 
-    public static record LongPair(long a, long b) {
+    public record LongPair(long a, long b) {
     }
 
 }
