@@ -23,6 +23,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.jetbrains:annotations:23.0.0'
     testImplementation(platform('org.junit:junit-bom:5.9.1'))
 	testImplementation('org.junit.jupiter:junit-jupiter')
 
@@ -36,19 +37,27 @@ test {
     }
 }
 
-task downloadZipFile(type: Download) {
+tasks.register('downloadZipFile', Download) {
     src 'https://algs4.cs.princeton.edu/code/algs4-data.zip'
     dest new File('algs4-data.zip')
     overwrite false
 }
 
-task downloadAndUnzipTestDataFile(dependsOn: downloadZipFile, type: Copy) {
+tasks.register('downloadAndUnzipTestDataFile', Copy) {
+    dependsOn downloadZipFile
     from zipTree(downloadZipFile.dest)
     into new File('./')
 }
 
-task downloadLib(type: Download) {
+tasks.register('downloadLib', Download) {
     src 'https://algs4.cs.princeton.edu/code/algs4.jar'
     dest new File('lib/algs4.jar')
     overwrite false
+}
+
+if (hasProperty('buildScan')) {
+    buildScan {
+        termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+        termsOfServiceAgree = 'yes'
+    }
 }
