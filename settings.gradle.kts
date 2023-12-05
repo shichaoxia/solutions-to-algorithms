@@ -1,1 +1,1 @@
-rootProject.name = "algorithms-sedgewick"
+rootProject.name = "solutions-to-algorithms"
