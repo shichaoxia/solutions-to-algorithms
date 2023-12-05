@@ -1,10 +1,11 @@
 package com.claudhart.algs4.chapter2.section2.exercise19;
 
-@SuppressWarnings({"rawtypes", "unchecked", "ManualArrayCopy", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes", "unchecked", "ManualArrayCopy"})
 public class Merge {
 
     private static int inversions;
 
+    @SuppressWarnings("unused")
     public static int getInversions() {
         return inversions;
     }

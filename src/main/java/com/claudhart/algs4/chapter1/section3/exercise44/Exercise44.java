@@ -18,21 +18,23 @@ public class Exercise44 {
         }
 
         public void left(int k) {
-            if (left.size() == 0 || k == 0)
+            if (left.isEmpty() || k == 0)
                 return;
             char c = left.pop();
             right.push(c);
             left(k - 1);
         }
 
+        @SuppressWarnings("unused")
         public void right(int k) {
-            if (left.size() == 0 || k == 0)
+            if (left.isEmpty() || k == 0)
                 return;
             char c = right.pop();
             left.push(c);
             right(k - 1);
         }
 
+        @SuppressWarnings("unused")
         public int size() {
             return left.size() + right.size();
         }

@@ -5,6 +5,7 @@ import com.claudhart.algs4.chapter1.section4.ThreeSum;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
+@SuppressWarnings("DuplicatedCode")
 public class RunningTimes {
     @SuppressWarnings({"CommentedOutCode", "ResultOfMethodCallIgnored"})
     public static double timeTrial(int N) {

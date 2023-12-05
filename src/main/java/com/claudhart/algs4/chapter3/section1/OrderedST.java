@@ -5,10 +5,12 @@ public interface OrderedST<Key extends Comparable<Key>, Value> extends ST<Key, V
 
     Value get(Key key);
 
+    @SuppressWarnings("unused")
     void delete(Key key);
 
     boolean contains(Key key);
 
+    @SuppressWarnings("unused")
     boolean isEmpty();
 
     int size();
@@ -25,8 +27,10 @@ public interface OrderedST<Key extends Comparable<Key>, Value> extends ST<Key, V
 
     Key select(int k);
 
+    @SuppressWarnings("unused")
     void deleteMin();
 
+    @SuppressWarnings("unused")
     void deleteMax();
 
     int size(Key lo, Key hi);

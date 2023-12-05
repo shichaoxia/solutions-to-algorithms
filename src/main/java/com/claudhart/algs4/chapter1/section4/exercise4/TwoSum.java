@@ -1,6 +1,7 @@
 package com.claudhart.algs4.chapter1.section4.exercise4;
 
 public class TwoSum {
+    @SuppressWarnings("unused")
     public static int count(int[] a) {
         int N = a.length;
         int cnt = 0;

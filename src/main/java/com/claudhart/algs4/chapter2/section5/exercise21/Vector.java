@@ -1,9 +1,9 @@
 package com.claudhart.algs4.chapter2.section5.exercise21;
 
 public class Vector {
-    int first;
-    int second;
-    int third;
+    final int first;
+    final int second;
+    final int third;
 
     public Vector(int first, int second, int third) {
         this.first = first;

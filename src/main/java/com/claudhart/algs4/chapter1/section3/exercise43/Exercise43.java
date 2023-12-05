@@ -6,10 +6,11 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise43 {
 
+    @SuppressWarnings("DataFlowIssue")
     public static void printFiles(int level, File dir) {
-        String indent = "";
+        StringBuilder indent = new StringBuilder();
         while (level > 0) {
-            indent += "    ";
+            indent.append("    ");
             level -= 1;
         }
         String[] names = dir.list();

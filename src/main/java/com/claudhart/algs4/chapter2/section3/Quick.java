@@ -9,6 +9,7 @@ public class Quick {
         sort(a, 0, a.length - 1);
     }
 
+    @SuppressWarnings("GrazieInspection")
     private static void sort(Comparable[] a, int lo, int hi) {
         if (hi <= lo) return;
         int j = partition(a, lo, hi);

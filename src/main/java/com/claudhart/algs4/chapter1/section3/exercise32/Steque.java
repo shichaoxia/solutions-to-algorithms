@@ -4,6 +4,7 @@ import java.util.Iterator;
 
 import com.claudhart.algs4.chapter1.section3.exercise31.LinkedList;
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 public class Steque<Item> implements Iterable<Item> {
     private final LinkedList<Item> l;
@@ -16,6 +17,7 @@ public class Steque<Item> implements Iterable<Item> {
         l.addFirst(item);
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item pop() {
         return l.removeFirst();
     }
@@ -25,7 +27,7 @@ public class Steque<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return l.iterator();
     }
 

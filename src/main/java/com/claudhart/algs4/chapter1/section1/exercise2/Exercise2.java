@@ -1,6 +1,5 @@
 package com.claudhart.algs4.chapter1.section1.exercise2;
 
-@SuppressWarnings("ConstantConditions")
 public class Exercise2 {
     public static Double a() {
         return (1 + 2.236) / 2;
@@ -10,6 +9,7 @@ public class Exercise2 {
         return 1 + 2 + 3 + 4.0;
     }
 
+    @SuppressWarnings("ConstantValue")
     public static Boolean c() {
        return 4.1 >= 4;
     }

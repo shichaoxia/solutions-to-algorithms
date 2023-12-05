@@ -4,6 +4,7 @@ package com.claudhart.algs4.chapter2.section2;
 public class MergeBU {
     private static Comparable[] aux;
 
+    @SuppressWarnings("unused")
     public static void sort(Comparable[] a) {
         // Do lg N passes of pairwise merges.
         int N = a.length;
@@ -13,6 +14,7 @@ public class MergeBU {
                 merge(a, lo, lo + sz - 1, Math.min(lo + 2 * sz - 1, N - 1));
     }
 
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi].
         int i = lo, j = mid + 1;

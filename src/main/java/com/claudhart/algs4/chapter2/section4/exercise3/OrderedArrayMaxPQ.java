@@ -1,8 +1,7 @@
 package com.claudhart.algs4.chapter2.section4.exercise3;
 
 public class OrderedArrayMaxPQ<Key extends Comparable<Key>> {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Key[] pq;
+    private final Key[] pq;
     private int N = 0;
 
     @SuppressWarnings("unchecked")
@@ -27,6 +26,7 @@ public class OrderedArrayMaxPQ<Key extends Comparable<Key>> {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }

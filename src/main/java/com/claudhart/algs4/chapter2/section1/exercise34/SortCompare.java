@@ -2,6 +2,9 @@ package com.claudhart.algs4.chapter2.section1.exercise34;
 
 import edu.princeton.cs.algs4.*;
 
+import java.util.Arrays;
+
+@SuppressWarnings("DuplicatedCode")
 public class SortCompare {
     public static double time(String alg, Double[] a) {
         Stopwatch timer = new Stopwatch();
@@ -32,9 +35,7 @@ public class SortCompare {
 
     public static Double[] sameKeysArray(int N) {
         Double[] a = new Double[N];
-        for (int i = 0; i < N; i++) {
-            a[i] = 0.0;
-        }
+        Arrays.fill(a, 0.0);
         return a;
     }
 

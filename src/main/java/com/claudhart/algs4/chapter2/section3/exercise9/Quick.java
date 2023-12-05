@@ -75,6 +75,7 @@ public class Quick {
         a[j] = t;
     }
 
+    @SuppressWarnings("CommentedOutCode")
     public static void main(String[] args) {
 //        Character[] a = {'A', 'A', 'A', 'B', 'B', 'B'};
 //        sort(a);

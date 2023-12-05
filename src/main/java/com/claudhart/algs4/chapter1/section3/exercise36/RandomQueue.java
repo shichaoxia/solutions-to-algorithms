@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
+import org.jetbrains.annotations.NotNull;
 
 public class RandomQueue<Item> implements Iterable<Item> {
 
@@ -13,6 +14,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
     private int first = 0;
     private int last = 0;
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return first == last;
     }
@@ -68,7 +70,7 @@ public class RandomQueue<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new RandomIterator();
     }
 

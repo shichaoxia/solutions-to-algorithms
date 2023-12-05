@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section3.exercise24;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise24 {
+    @SuppressWarnings("DuplicatedCode")
     public static class LinkedList<Item> {
         public class Node {
             public Item item;
@@ -26,13 +27,13 @@ public class Exercise24 {
 
         @Override
         public String toString() {
-            String s = "";
+            StringBuilder s = new StringBuilder();
             Node i = first;
             while (i != null) {
-                s = i.item + " " + s;
+                s.insert(0, i.item + " ");
                 i = i.next;
             }
-            s = s.stripTrailing();
+            s = new StringBuilder(s.toString().stripTrailing());
             return "LinkedList [" + s + "](first)@" + System.identityHashCode(this);
         }
     }

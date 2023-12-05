@@ -52,6 +52,7 @@ public class Quick {
         a[j] = t;
     }
 
+    @SuppressWarnings("unused")
     public static boolean isSorted(Comparable[] a) {
         for (int i = 1; i < a.length; i++)
             if (less(a[i], a[i - 1]))

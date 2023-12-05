@@ -164,11 +164,13 @@ public class InterpolationSearchST<Key extends Number & Comparable<Key>, Value> 
         return null;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMin() {
 
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMax() {
 

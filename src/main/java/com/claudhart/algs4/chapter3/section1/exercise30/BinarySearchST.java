@@ -6,6 +6,7 @@ import com.claudhart.algs4.chapter3.section1.OrderedST;
 
 import java.util.NoSuchElementException;
 
+@SuppressWarnings("DuplicatedCode")
 public class BinarySearchST<Key extends Comparable<Key>, Value> implements OrderedST<Key, Value> {
     private static final int INIT_CAPACITY = 2;
     private Key[] keys;
@@ -115,12 +116,14 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Order
         return get(key) != null;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMin() {
         if (isEmpty()) throw new NoSuchElementException("Symbol table underflow error");
         delete(min());
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMax() {
         if (isEmpty()) throw new NoSuchElementException("Symbol table underflow error");

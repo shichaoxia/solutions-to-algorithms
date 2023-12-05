@@ -5,6 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Selection {
 
+    @SuppressWarnings("GrazieInspection")
     public static <T extends Comparable<T>> void sort(T[] a) {
         // Sort a[] into increasing order.
         int N = a.length; // array length

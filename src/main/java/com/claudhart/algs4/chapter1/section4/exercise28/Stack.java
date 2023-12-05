@@ -2,12 +2,13 @@ package com.claudhart.algs4.chapter1.section4.exercise28;
 
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 
 public class Stack<Item> implements Iterable<Item> {
     int N = 0;
-    Queue<Item> q = new Queue<>();
+    final Queue<Item> q = new Queue<>();
 
     public static void main(String[] args) {
         Stack<String> s = new Stack<>();
@@ -42,7 +43,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return q.iterator();
     }
 }

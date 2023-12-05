@@ -5,11 +5,11 @@ public class BSTConst<Key extends Comparable<Key>, Value> {
 
     // tag::snippet[]
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
         private int N;
-        private int D;
+        private final int D;
         private int iPL;
 
         public Node(Key key, Value val, int N, int D, int iPL) {
@@ -22,6 +22,7 @@ public class BSTConst<Key extends Comparable<Key>, Value> {
     }
     // end::snippet[]
 
+    @SuppressWarnings("unused")
     public int size() {
         return size(root);
     }
@@ -32,6 +33,7 @@ public class BSTConst<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public Value get(Key key) {
         return get(root, key);
     }
@@ -70,6 +72,7 @@ public class BSTConst<Key extends Comparable<Key>, Value> {
     }
     // end::snippet1[]
 
+    @SuppressWarnings("unused")
     public void printTree() {
         printTree(root, "", true, false, false);
     }

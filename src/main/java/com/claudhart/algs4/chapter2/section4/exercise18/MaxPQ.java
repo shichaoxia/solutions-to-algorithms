@@ -7,7 +7,6 @@ import java.util.Objects;
 
 @SuppressWarnings({"unused", "DuplicatedCode"})
 public class MaxPQ<Key extends Comparable<Key>> implements Cloneable {
-    @SuppressWarnings("FieldMayBeFinal")
     private Key[] pq;
     private int N = 0;
 

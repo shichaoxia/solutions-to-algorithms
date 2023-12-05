@@ -14,12 +14,12 @@ public class TwoSumFaster {
             if (a[i] == 0)
                 zeroCnt += 1;
         }
-        for (int i = 0; i < N; i++) {
-            if (am.containsValue(-a[i])) {
+        for (int j : a) {
+            if (am.containsValue(-j)) {
                 cnt += 1;
                 // Remove the element being looked up to prevent it from being counted again
                 // later
-                remove(am, a[i]);
+                remove(am, j);
             }
         }
         if (zeroCnt == 0)

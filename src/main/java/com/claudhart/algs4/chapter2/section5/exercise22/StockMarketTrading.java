@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter2.section5.exercise22;
 
 import java.util.PriorityQueue;
 
+@SuppressWarnings("ClassEscapesDefinedScope")
 public class StockMarketTrading {
     private final PriorityQueue<Order> buyers;
     private final PriorityQueue<Order> sellers;

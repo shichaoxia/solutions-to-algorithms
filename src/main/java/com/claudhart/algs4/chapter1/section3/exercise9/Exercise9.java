@@ -7,6 +7,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise9 {
     // 1 + 2 ) * 3 - 4 ) * 5 - 6 ) ) )
+    @SuppressWarnings("StatementWithEmptyBody")
     public static String completeLeftBracket(String input) throws Exception {
         String[] items = input.split(" ");
         Stack<String> ops = new Stack<>();
@@ -16,8 +17,8 @@ public class Exercise9 {
                 vals.push(item);
             else if (Pattern.matches("[+\\-\\*/]", item))
                 ops.push(item);
-            else if (Pattern.matches("\\(", item))
-                continue;
+            else if (Pattern.matches("\\(", item)) {
+            }
             else if (Pattern.matches("\\)", item)) {
                 String val2 = vals.pop();
                 String val1 = vals.pop();

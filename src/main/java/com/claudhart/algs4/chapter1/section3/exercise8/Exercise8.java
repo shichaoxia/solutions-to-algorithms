@@ -4,6 +4,7 @@ import com.claudhart.algs4.chapter1.section3.FixedCapacityStackOfStrings;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("DuplicatedCode")
 public class Exercise8 {
     public static void main(String[] args) {
         FixedCapacityStackOfStrings s;

@@ -31,6 +31,7 @@ public class BitonicSearch {
         return searchPeek(a, lo, mid - 1);         // inside decreasing sequence
     }
 
+    @SuppressWarnings("RedundantIfStatement")
     public static int searchMaximum(int[] a, int key) {
         int peek = searchPeek(a);
         if (a[peek] == key) return peek;

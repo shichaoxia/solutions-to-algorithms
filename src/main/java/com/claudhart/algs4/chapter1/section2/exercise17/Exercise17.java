@@ -1,5 +1,6 @@
 package com.claudhart.algs4.chapter1.section2.exercise17;
 
+@SuppressWarnings("unused")
 public class Exercise17 {
 
     @SuppressWarnings("UnusedReturnValue")

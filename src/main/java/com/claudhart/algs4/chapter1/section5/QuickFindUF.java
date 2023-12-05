@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section5;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("DuplicatedCode")
 public class QuickFindUF {
     private final int[] id;
     private int count;

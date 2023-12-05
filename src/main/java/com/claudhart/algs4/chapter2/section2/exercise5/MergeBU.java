@@ -16,6 +16,7 @@ public class MergeBU {
                 merge(a, lo, lo + sz - 1, Math.min(lo + 2 * sz - 1, N - 1));
     }
 
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         StdOut.printf("merge(%d, %d, %d)%n", lo, mid, hi);
         // Merge a[lo..mid] with a[mid+1..hi].

@@ -5,6 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("DuplicatedCode")
 public class WeightedQuickUnionUF {
     private final ArrayList<Integer> id = new ArrayList<>();
     private final ArrayList<Integer> sz = new ArrayList<>();

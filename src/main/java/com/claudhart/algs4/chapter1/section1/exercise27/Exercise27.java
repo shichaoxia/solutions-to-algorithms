@@ -19,7 +19,7 @@ public class Exercise27 {
         return (1.0 - p) * binomial(N - 1, k, p) + p * binomial(N - 1, k - 1, p);
     }
 
-    static Map<IntTuple, Double> cache = new HashMap<>();
+    static final Map<IntTuple, Double> cache = new HashMap<>();
 
     public static double memorizedBinomial(int N, int k, double p) {
         IntTuple key = new IntTuple(N, k);

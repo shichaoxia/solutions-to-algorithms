@@ -4,6 +4,7 @@ import com.claudhart.algs4.chapter1.section3.Queue;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
+@SuppressWarnings("DuplicatedCode")
 public class RandomQueue<Item> {
 
     @SuppressWarnings("unchecked")
@@ -11,6 +12,7 @@ public class RandomQueue<Item> {
     private int first = 0;
     private int last = 0;
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return first == last;
     }
@@ -19,7 +21,7 @@ public class RandomQueue<Item> {
         return last - first;
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "ManualArrayCopy"})
     private void resize(int max) {
         Item[] temp = (Item[]) new Object[max];
         for (int i = first; i < last; i++) {
@@ -57,6 +59,7 @@ public class RandomQueue<Item> {
         a[first] = temp;
     }
 
+    @SuppressWarnings("unused")
     public Item sample() {
         Item item = dequeue();
         enqueue(item);

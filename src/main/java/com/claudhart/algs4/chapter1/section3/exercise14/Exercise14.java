@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 public class Exercise14 {
     public static class ResizingArrayQueueOfStrings implements Iterable<String> {
@@ -11,6 +12,7 @@ public class Exercise14 {
         private int first = 0;
         private int last = 0;
 
+        @SuppressWarnings("unused")
         public boolean isEmpty() {
             return first == last;
         }
@@ -19,6 +21,7 @@ public class Exercise14 {
             return last - first;
         }
 
+        @SuppressWarnings("ManualArrayCopy")
         private void resize(int max) {
             String[] temp = new String[max];
             for (int i = first; i < last; i++) {
@@ -36,6 +39,7 @@ public class Exercise14 {
             a[last++] = item;
         }
 
+        @SuppressWarnings("UnusedReturnValue")
         public String dequeue() {
             if (size() == 0)
                 return null;
@@ -49,16 +53,16 @@ public class Exercise14 {
         @Override
         public String toString() {
             int current = first;
-            String s = "";
+            StringBuilder s = new StringBuilder();
             while (current != last) {
-                s = a[current] + " " + s;
+                s.insert(0, a[current] + " ");
                 current += 1;
             }
-            s = s.stripTrailing();
+            s = new StringBuilder(s.toString().stripTrailing());
             return "Queue >[" + s + "]>@" + System.identityHashCode(this);
         }
 
-        public Iterator<String> iterator() {
+        public @NotNull Iterator<String> iterator() {
             return new ArrayQueueIterator();
         }
 

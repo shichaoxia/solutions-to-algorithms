@@ -23,6 +23,7 @@ public class Quick3way {
         sort(a, gt + 1, hi);
     }
 
+    @SuppressWarnings("unused")
     public static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }

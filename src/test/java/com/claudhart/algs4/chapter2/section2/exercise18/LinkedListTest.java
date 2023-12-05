@@ -21,6 +21,7 @@ class LinkedListTest {
         d = LinkedList.fromArray(new Integer[]{0, 1, 2, 3, 4});
     }
 
+    @SuppressWarnings("DataFlowIssue")
     @Test
     void removeLast() {
         assertNull(a.removeLast());

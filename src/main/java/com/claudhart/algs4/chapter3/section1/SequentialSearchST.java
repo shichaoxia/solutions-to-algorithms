@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter3.section1;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("DuplicatedCode")
 public class SequentialSearchST<Key, Value> implements ST<Key, Value> {
 
     private Node first;
@@ -83,7 +84,7 @@ public class SequentialSearchST<Key, Value> implements ST<Key, Value> {
     }
 
     private class Node {
-        Key key;
+        final Key key;
         Value value;
         Node next;
 

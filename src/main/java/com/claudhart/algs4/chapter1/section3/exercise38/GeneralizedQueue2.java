@@ -7,6 +7,7 @@ public class GeneralizedQueue2<Item> {
 
     private final LinkedList<Item> l = new LinkedList<>();
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return l.size() == 0;
     }

@@ -1,10 +1,11 @@
 package com.claudhart.algs4.chapter3.section2.exercise6;
 
+@SuppressWarnings("DuplicatedCode")
 public class BST<Key extends Comparable<Key>, Value> {
     private Node root;
 
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
         private int N;
@@ -16,6 +17,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return size(root);
     }
@@ -26,6 +28,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public Value get(Key key) {
         return get(root, key);
     }
@@ -63,6 +66,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     // end::snippet[]
 
+    @SuppressWarnings("unused")
     public void printTree() {
         printTree(root, "", true, false, false);
     }

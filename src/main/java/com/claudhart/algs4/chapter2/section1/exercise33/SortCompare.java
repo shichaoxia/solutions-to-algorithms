@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@SuppressWarnings("DuplicatedCode")
 public class SortCompare {
     public static double time(String alg, Double[] a) {
         Stopwatch timer = new Stopwatch();
@@ -43,7 +44,7 @@ public class SortCompare {
     }
 
     public static void addAvgTime(List<Double> times, List<Double> avgTimes, double t) {
-        Double sum = 0.0;
+        double sum = 0.0;
         for (double x : times)
             sum += x;
         Double newAvg = (sum + t) / (times.size() + 1);

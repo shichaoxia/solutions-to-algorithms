@@ -113,7 +113,7 @@ public class SequentialSearchST<Key, Value> implements ST<Key, Value> {
     }
 
     private class Node {
-        Key key;
+        final Key key;
         Value value;
         Node next;
 

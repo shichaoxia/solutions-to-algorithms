@@ -1,6 +1,6 @@
 package com.claudhart.algs4.chapter2.section4.exercise41;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class HeapsortFourAry {
 
     private static int comparesNum;

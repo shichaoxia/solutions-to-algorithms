@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class ElementarySample {
 
-    double[] p;
+    final double[] p;
 
     private double T;
 

@@ -1,14 +1,10 @@
 package com.claudhart.algs4.chapter2.section3.exercise23;
 
-import edu.princeton.cs.algs4.StdOut;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Quick3wayTest {
 
+    @SuppressWarnings({"CommentedOutCode", "unused"})
     @Test
     void sort() {
         int len = 30;
@@ -22,7 +18,7 @@ class Quick3wayTest {
 //            assertArrayEquals(b, a);
 //        }
         Quick3way.sort(a);
-        StdOut.println(Arrays.toString(a));
+//        StdOut.println(Arrays.toString(a));
 
     }
 }

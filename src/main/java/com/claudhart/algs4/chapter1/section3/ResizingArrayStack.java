@@ -1,5 +1,7 @@
 package com.claudhart.algs4.chapter1.section3;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Iterator;
 
 public class ResizingArrayStack<Item> implements Iterable<Item> {
@@ -8,10 +10,12 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     private Item[] a = (Item[]) new Object[1];
     private int N = 0;
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -38,7 +42,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
         return item;
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ReverseIterator();
     }
 

@@ -7,11 +7,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+@SuppressWarnings("DuplicatedCode")
 public class FrequencyCounter {
 
-    int minLen;
-    ST<String, Integer> st;
-    File file;
+    final int minLen;
+    final ST<String, Integer> st;
+    final File file;
 
     public FrequencyCounter(int minLen, String file, int capacity) {
         this.minLen = minLen;

@@ -1,7 +1,8 @@
 package com.claudhart.algs4.chapter1.section1.exercise3;
 
-@SuppressWarnings({"ConditionCoveredByFurtherCondition", "ConstantConditions"})
+@SuppressWarnings({"ConditionCoveredByFurtherCondition"})
 public class Exercise3 {
+    @SuppressWarnings("ConstantValue")
     public static void main(String[] args) {
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);

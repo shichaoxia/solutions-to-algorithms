@@ -5,6 +5,7 @@ import edu.princeton.cs.algs4.BinarySearch;
 import java.util.Arrays;
 
 public class TwoSumFast {
+    @SuppressWarnings("unused")
     public static int count(int[] a) {
         Arrays.sort(a);
         int N = a.length;

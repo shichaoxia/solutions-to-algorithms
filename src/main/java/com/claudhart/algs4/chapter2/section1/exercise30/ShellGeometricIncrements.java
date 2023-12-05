@@ -42,11 +42,13 @@ public class ShellGeometricIncrements {
         a[j] = t;
     }
 
+    @SuppressWarnings("unused")
     public static void show(Comparable[] a) {
         for (Comparable t : a) StdOut.print(t + " ");
         StdOut.println();
     }
 
+    @SuppressWarnings("unused")
     public static boolean isSorted(Comparable[] a) {
         for (int i = 1; i < a.length; i++)
             if (less(a[i], a[i - 1])) return false;
@@ -63,6 +65,7 @@ public class ShellGeometricIncrements {
         return timer.elapsedTime();
     }
 
+    @SuppressWarnings("UnnecessaryLocalVariable")
     public static void main(String[] args) {
         StdOut.printf("%6s %6s%n", "t", "time");
         List<Double> times = new ArrayList<>();

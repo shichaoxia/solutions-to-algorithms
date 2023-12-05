@@ -1,6 +1,7 @@
 package com.claudhart.algs4.chapter1.section4.exercise38;
 
 public class NaiveThreeSum {
+    @SuppressWarnings("UnusedReturnValue")
     public static int count(int[] a) {
         int N = a.length;
         int cnt = 0;

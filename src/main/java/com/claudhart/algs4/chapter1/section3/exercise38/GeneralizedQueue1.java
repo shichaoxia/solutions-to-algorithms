@@ -9,6 +9,7 @@ public class GeneralizedQueue1<Item> {
     private Item[] a = (Item[]) new Object[1];
     private int N = 0;
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
@@ -16,8 +17,7 @@ public class GeneralizedQueue1<Item> {
     @SuppressWarnings("unchecked")
     private void resize(int max) {
         Item[] temp = (Item[]) new Object[max];
-        for (int i = 0; i < N; i++)
-            temp[i] = a[i];
+        if (N >= 0) System.arraycopy(a, 0, temp, 0, N);
         a = temp;
     }
 
@@ -27,6 +27,7 @@ public class GeneralizedQueue1<Item> {
         a[N++] = item;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item delete(int k) {
         Item item = a[k];
 

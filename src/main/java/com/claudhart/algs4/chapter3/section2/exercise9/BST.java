@@ -4,11 +4,12 @@ import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.stream.IntStream;
 
+@SuppressWarnings("DuplicatedCode")
 public class BST<Key extends Comparable<Key>, Value> {
     private Node root;
 
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
         private int N;
@@ -37,6 +38,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return size(root);
     }
@@ -46,6 +48,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         else return x.N;
     }
 
+    @SuppressWarnings("unused")
     public Value get(Key key) {
         return get(root, key);
     }

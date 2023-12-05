@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section4.exercise19;
 import com.claudhart.algs4.chapter1.section4.exercise18.ArrayLocalMinimum;
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("ClassEscapesDefinedScope")
 public class MatrixLocalMinimum {
 
     public static Pair search(int[][] a) {

@@ -4,11 +4,11 @@ package com.claudhart.algs4.chapter3.section1.exercise11;
 import com.claudhart.algs4.chapter1.section3.Queue;
 import com.claudhart.algs4.chapter3.section1.OrderedST;
 import com.claudhart.algs4.chapter3.section1.ST;
-import com.claudhart.algs4.chapter3.section1.exercise10.SequentialSearchST;
 
+@SuppressWarnings("DuplicatedCode")
 public class BinarySearchST<Key extends Comparable<Key>, Value> implements OrderedST<Key, Value> {
-    private Key[] keys;
-    private Value[] vals;
+    private final Key[] keys;
+    private final Value[] vals;
     private int N;
     private int comparesNum;
 
@@ -48,11 +48,13 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Order
         return keys[k];
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMin() {
         delete(min());
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMax() {
         delete(max());

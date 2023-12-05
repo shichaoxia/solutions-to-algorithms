@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 @SuppressWarnings({"unused", "DuplicatedCode"})
 public class MaxPQ<Key extends Comparable<Key>> {
-    @SuppressWarnings("FieldMayBeFinal")
     private Key[] pq;
     private int N = 0;
 

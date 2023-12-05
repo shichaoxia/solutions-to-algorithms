@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class BirthdayProblem {
 
+    @SuppressWarnings("MismatchedReadAndWriteOfArray")
     public static int numbersBeforeRepeated(int N) {
         Set<Integer> s = new HashSet<>();
         int[] a = new int[N];

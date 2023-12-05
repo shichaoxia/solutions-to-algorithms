@@ -18,6 +18,7 @@ public class TestClient {
                 return null;
             }
 
+            @SuppressWarnings("unused")
             @Override
             public void delete(String s) {
 
@@ -28,6 +29,7 @@ public class TestClient {
                 return false;
             }
 
+            @SuppressWarnings("unused")
             @Override
             public boolean isEmpty() {
                 return false;

@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section3.exercise30;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise30 {
+    @SuppressWarnings("ClassEscapesDefinedScope")
     public static class LinkedList<Item> {
         private class Node {
             Item item;
@@ -52,13 +53,13 @@ public class Exercise30 {
 
         @Override
         public String toString() {
-            String s = "";
+            StringBuilder s = new StringBuilder();
             Node current = first;
             while (current != null) {
-                s += ", " + current.item;
+                s.append(", ").append(current.item);
                 current = current.next;
             }
-            s = s.substring(2);
+            s = new StringBuilder(s.substring(2));
             return "LinkedList (first)[" + s + "] @" + System.identityHashCode(this);
         }
     }

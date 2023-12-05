@@ -46,8 +46,11 @@ public class TopM {
     }
 
     private static class Point implements Comparable<Point> {
+        @SuppressWarnings("unused")
         public final double x;
+        @SuppressWarnings("unused")
         public final double y;
+        @SuppressWarnings("unused")
         public final double z;
 
         public final double distance;

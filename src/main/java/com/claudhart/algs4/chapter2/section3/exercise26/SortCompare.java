@@ -6,7 +6,7 @@ import java.util.Map;
 
 import static com.claudhart.algs4.chapter2.section3.exercise26.Quick.sort;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class SortCompare {
 
     public static void main(String[] args) {

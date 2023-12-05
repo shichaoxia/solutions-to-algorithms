@@ -5,6 +5,7 @@ public class Node {
     public Comparable item;
     public Node next;
 
+    @SuppressWarnings("unused")
     public boolean less(Node other) {
         return this.item.compareTo(other.item) < 0;
     }

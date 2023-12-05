@@ -6,6 +6,7 @@ import com.claudhart.algs4.chapter1.section4.Stopwatch;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class DoublingRatio {
 
     public static double timeTrialIntStack(int N) {

@@ -11,7 +11,7 @@ import java.util.Arrays;
 @SuppressWarnings({"rawtypes", "unchecked"})
 public class DoublingTestForRandomGrids {
 
-    static Class[] ufs = {QuickFindUF.class, QuickUnionUF.class, WeightedQuickUnionUF.class};
+    static final Class[] ufs = {QuickFindUF.class, QuickUnionUF.class, WeightedQuickUnionUF.class};
 
     public static void main(String[] args) {
 

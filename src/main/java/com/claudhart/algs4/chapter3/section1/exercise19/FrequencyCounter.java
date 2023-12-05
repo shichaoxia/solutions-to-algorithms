@@ -8,9 +8,9 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class FrequencyCounter {
-    OrderedST<String, Integer> st = new BinarySearchST<>();
-    int minLen;
-    File file;
+    final OrderedST<String, Integer> st = new BinarySearchST<>();
+    final int minLen;
+    final File file;
 
     public FrequencyCounter(int minLen, String file) {
         this.minLen = minLen;

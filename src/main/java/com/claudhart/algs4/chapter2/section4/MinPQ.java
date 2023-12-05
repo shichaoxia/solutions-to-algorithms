@@ -2,8 +2,7 @@ package com.claudhart.algs4.chapter2.section4;
 
 @SuppressWarnings("DuplicatedCode")
 public class MinPQ<Key extends Comparable<Key>> {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Key[] pq;
+    private final Key[] pq;
     private int N = 0;
 
     @SuppressWarnings("unchecked")
@@ -11,6 +10,7 @@ public class MinPQ<Key extends Comparable<Key>> {
         pq = (Key[]) new Comparable[maxN + 1];
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public boolean isEmpty() {
         return N == 0;
     }

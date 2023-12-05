@@ -15,12 +15,13 @@ public class Exercise19 {
         return F(N - 1) + F(N - 2);
     }
 
-    static Map<Integer, Long> temp = new HashMap<>();
+    static final Map<Integer, Long> temp = new HashMap<>();
 
+    @SuppressWarnings("UnusedReturnValue")
     public static Long memorizedF(int N) {
         if (temp.get(N) != null)
             return temp.get(N);
-        Long result = Long.valueOf(F(N));
+        Long result = F(N);
         temp.put(N, result);
         return result;
     }

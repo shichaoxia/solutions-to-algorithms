@@ -6,6 +6,7 @@ import edu.princeton.cs.algs4.StdRandom;
 
 import java.awt.*;
 
+@SuppressWarnings("DuplicatedCode")
 public class Selection {
     private static final int ARRAY_SIZE = 20;
     private static final double RANDOM_LOWER_LIMIT = 0.0;

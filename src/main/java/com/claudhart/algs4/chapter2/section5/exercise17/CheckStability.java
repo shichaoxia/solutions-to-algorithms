@@ -97,8 +97,8 @@ public class CheckStability {
     }
 
     public static class Student implements Comparable<Student> {
-        int id;
-        String name;
+        final int id;
+        final String name;
 
         public Student(String s) {
             String[] fields = s.split(" ");

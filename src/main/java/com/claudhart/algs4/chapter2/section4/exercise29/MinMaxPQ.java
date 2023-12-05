@@ -1,7 +1,7 @@
 package com.claudhart.algs4.chapter2.section4.exercise29;
 
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class MinMaxPQ {
     private final MinPQ minPQ;
     private final MaxPQ maxPQ;

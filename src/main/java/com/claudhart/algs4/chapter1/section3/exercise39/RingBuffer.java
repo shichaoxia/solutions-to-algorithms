@@ -16,6 +16,7 @@ public class RingBuffer<Item> {
         a = (Item[]) new Object[N];
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return first == -1 && last == -1;
     }
@@ -36,6 +37,7 @@ public class RingBuffer<Item> {
         last = newLast;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item dequeue() {
         // Empty
         if (first == -1 && last == -1)

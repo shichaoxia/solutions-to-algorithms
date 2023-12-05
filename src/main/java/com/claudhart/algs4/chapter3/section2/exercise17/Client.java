@@ -3,7 +3,6 @@ package com.claudhart.algs4.chapter3.section2.exercise17;
 import com.claudhart.algs4.chapter3.section2.BST;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class Client {
     public static void main(String[] args) {

@@ -4,8 +4,9 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "DuplicatedCode"})
 public class Stack<Item> implements Iterable<Item> {
 
     private class Node {
@@ -59,7 +60,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ReversedIterator();
     }
 

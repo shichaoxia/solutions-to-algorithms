@@ -3,7 +3,7 @@ package com.claudhart.algs4.chapter2.section2.exercise8;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
 
-@SuppressWarnings({"rawtypes", "unchecked", "ManualArrayCopy"})
+@SuppressWarnings({"rawtypes", "unchecked", "ManualArrayCopy", "DuplicatedCode"})
 public class Merge {
 
     private static Comparable[] aux;  // auxiliary array for merges
@@ -23,6 +23,7 @@ public class Merge {
     }
 
     // tag::solution[]
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi].
 

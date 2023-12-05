@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section3.exercise47;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("DuplicatedCode")
 public class Queue<Item> implements Iterable<Item> {
@@ -41,6 +42,7 @@ public class Queue<Item> implements Iterable<Item> {
         N++;
     }
 
+    @SuppressWarnings("unused")
     public Item dequeue() {
         Item item = first.item;
         first = first.next;
@@ -62,7 +64,7 @@ public class Queue<Item> implements Iterable<Item> {
         return "Queue <[" + s + "]<@" + System.identityHashCode(this);
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ListIterator();
     }
 

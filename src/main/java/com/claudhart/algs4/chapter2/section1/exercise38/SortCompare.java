@@ -2,7 +2,7 @@ package com.claudhart.algs4.chapter2.section1.exercise38;
 
 import edu.princeton.cs.algs4.*;
 
-@SuppressWarnings("rawtypes")
+@SuppressWarnings({"rawtypes", "DuplicatedCode"})
 public class SortCompare {
     public static double time(String alg, Comparable[] a) {
         Stopwatch timer = new Stopwatch();

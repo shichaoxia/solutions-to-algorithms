@@ -1,14 +1,16 @@
 package com.claudhart.algs4.chapter1.section4.exercise31;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Iterator;
 import java.util.Stack;
 
 public class Deque<Item> implements Iterable<Item> {
 
     int N = 0;
-    Stack<Item> forward = new Stack<>();
-    Stack<Item> backward = new Stack<>();
-    Stack<Item> temp = new Stack<>();
+    final Stack<Item> forward = new Stack<>();
+    final Stack<Item> backward = new Stack<>();
+    final Stack<Item> temp = new Stack<>();
 
     public void addFirst(Item item) {
         N += 1;
@@ -55,13 +57,13 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new DequeIterator();
     }
 
     @Override
     public String toString() {
-        return forward.toString() + backward.toString();
+        return forward.toString() + backward;
     }
 
     private class DequeIterator implements Iterator<Item> {

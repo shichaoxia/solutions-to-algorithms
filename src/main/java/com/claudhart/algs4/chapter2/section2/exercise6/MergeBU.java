@@ -2,7 +2,7 @@ package com.claudhart.algs4.chapter2.section2.exercise6;
 
 import edu.princeton.cs.algs4.StdRandom;
 
-@SuppressWarnings({"rawtypes", "unchecked"})
+@SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
 public class MergeBU {
     public static int arrayAccessCount = 0;
     private static Comparable[] aux;
@@ -16,6 +16,7 @@ public class MergeBU {
                 merge(a, lo, lo + sz - 1, Math.min(lo + 2 * sz - 1, N - 1));
     }
 
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi].
         int i = lo, j = mid + 1;
@@ -44,6 +45,7 @@ public class MergeBU {
         return a[index];
     }
 
+    @SuppressWarnings("unused")
     public static int mergesortArrayOfLength(int length) {
         Double[] a = randomArray(length);
         MergeBU.sort(a);

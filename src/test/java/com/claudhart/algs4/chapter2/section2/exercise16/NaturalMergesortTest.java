@@ -1,10 +1,6 @@
 package com.claudhart.algs4.chapter2.section2.exercise16;
 
-import edu.princeton.cs.algs4.Out;
-import edu.princeton.cs.algs4.StdOut;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,7 +10,7 @@ class NaturalMergesortTest {
     void sort() {
         Integer[] a = {6, 8, 7, 1, 2, 3, 9, 5, 0, 4};
         NaturalMergesort.sort(a);
-        StdOut.println(Arrays.toString(a));
+//        StdOut.println(Arrays.toString(a));
     }
 
     @Test

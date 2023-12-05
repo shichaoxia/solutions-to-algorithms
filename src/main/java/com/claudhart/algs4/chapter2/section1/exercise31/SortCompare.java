@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter2.section1.exercise31;
 
 import edu.princeton.cs.algs4.*;
 
+@SuppressWarnings("DuplicatedCode")
 public class SortCompare {
     public static double time(String alg, Integer[] a) {
         Stopwatch timer = new Stopwatch();
@@ -27,6 +28,7 @@ public class SortCompare {
         return total;
     }
 
+    @SuppressWarnings("unused")
     public static Integer[] randomArray(int N) {
         Integer[] a = new Integer[N];
         for (int i = 0; i < N; i++)
@@ -38,7 +40,7 @@ public class SortCompare {
         int T = 5;
         StdOut.printf("%10s %10s %10s %10s%n", "N", "time", "ratio", "log2");
         double previous = timeRandomInput(alg, 500, T);
-        int K = (alg == "Shell") ? 2_048_000 : 64_000;
+        int K = (alg.equals("Shell")) ? 2_048_000 : 64_000;
         for (int N = 1_000; N <= K; N *= 2) {
             double time = timeRandomInput(alg, N, T);
             double ratio = time / previous;

@@ -2,7 +2,7 @@ package com.claudhart.algs4.chapter1.section4.exercise16;
 
 import java.util.Arrays;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "ClassEscapesDefinedScope"})
 public class ClosestPair {
 
     public static Pair find(double[] a) {

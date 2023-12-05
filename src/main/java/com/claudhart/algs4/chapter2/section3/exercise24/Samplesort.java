@@ -1,10 +1,7 @@
 package com.claudhart.algs4.chapter2.section3.exercise24;
 
 import edu.princeton.cs.algs4.Insertion;
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
-
-import java.util.Arrays;
 
 @SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
 public class Samplesort {

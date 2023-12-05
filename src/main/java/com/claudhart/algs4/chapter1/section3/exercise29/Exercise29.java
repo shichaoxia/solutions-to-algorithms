@@ -17,10 +17,12 @@ public class Exercise29 {
             last.next = last;
         }
 
+        @SuppressWarnings("unused")
         public boolean isEmpty() {
             return last.next == last;
         }
 
+        @SuppressWarnings("unused")
         public int size() {
             return N;
         }
@@ -34,6 +36,7 @@ public class Exercise29 {
             N += 1;
         }
 
+        @SuppressWarnings("UnusedReturnValue")
         public Item removeLast() {
             if (last.next == last)
                 return null;
@@ -59,13 +62,13 @@ public class Exercise29 {
 
         @Override
         public String toString() {
-            String s = "";
+            StringBuilder s = new StringBuilder();
             Node first = last.next;
             while (first != last) {
-                s += ", " + first.item;
+                s.append(", ").append(first.item);
                 first = first.next;
             }
-            s = s.substring(2);
+            s = new StringBuilder(s.substring(2));
             return "CircularLinkedList [" + s + "](last) @" + System.identityHashCode(this);
         }
     }

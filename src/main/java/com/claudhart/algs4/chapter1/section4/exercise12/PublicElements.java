@@ -5,9 +5,9 @@ import java.util.Arrays;
 import edu.princeton.cs.algs4.StdOut;
 
 public class PublicElements {
-    int[] a;
-    int[] b;
-    int N;
+    final int[] a;
+    final int[] b;
+    final int N;
     int cursorA = 0;
     int cursorB = 0;
     Integer lastPublicElement = null;

@@ -16,16 +16,13 @@ public class ArrayST<Key, Value> implements ST<Key, Value> {
 
     private int N;
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "unused"})
     public ArrayST() {
         keys = (Key[]) new Object[INIT_CAPACITY];
         values = (Value[]) new Object[INIT_CAPACITY];
     }
 
-    public static void main(String[] args) {
-
-    }
-
+    @SuppressWarnings("unused")
     @Override
     public void put(Key key, Value val) {
         if (key == null) throw new IllegalArgumentException("key cannot be null");
@@ -86,6 +83,7 @@ public class ArrayST<Key, Value> implements ST<Key, Value> {
      s  e
     ♥ ΔΔΔ♥♥
     */
+    @SuppressWarnings("SameParameterValue")
     private void shiftRight(int start, int end) {
         for (int i = start + 1; i <= end; i++) {
             keys[i] = keys[i - 1];
@@ -120,6 +118,7 @@ public class ArrayST<Key, Value> implements ST<Key, Value> {
         shiftLeft(start, N - 1);
     }
 
+    @SuppressWarnings("unused")
     @Override
     public boolean contains(Key key) {
         return get(key) != null;
@@ -130,11 +129,13 @@ public class ArrayST<Key, Value> implements ST<Key, Value> {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public int size() {
         return N;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Iterable<Key> keys() {
         List<Key> list = new ArrayList<>();

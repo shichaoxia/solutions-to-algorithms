@@ -6,7 +6,9 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class TwoEqual {
+    @SuppressWarnings("unused")
     public static int count(int[] a) {
         int cnt = 0;
         for (int i = 0; i < a.length; i++) {
@@ -18,6 +20,7 @@ public class TwoEqual {
         return cnt;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public static int countFast(int[] a) {
         Arrays.sort(a);
         int cnt = 0;

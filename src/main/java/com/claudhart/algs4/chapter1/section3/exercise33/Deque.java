@@ -4,6 +4,7 @@ import java.util.Iterator;
 
 import com.claudhart.algs4.chapter1.section3.exercise31.LinkedList;
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 public class Deque<Item> implements Iterable<Item> {
 
@@ -13,10 +14,12 @@ public class Deque<Item> implements Iterable<Item> {
         l = new LinkedList<>();
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return l.size() == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return l.size();
     }
@@ -38,7 +41,7 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return l.iterator();
     }
 

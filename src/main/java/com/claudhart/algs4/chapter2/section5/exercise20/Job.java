@@ -3,8 +3,8 @@ package com.claudhart.algs4.chapter2.section5.exercise20;
 import java.util.Comparator;
 
 public class Job {
-    public int startTime;
-    public int endTime;
+    public final int startTime;
+    public final int endTime;
 
     public Job(int startTime, int endTime) {
         this.startTime = startTime;

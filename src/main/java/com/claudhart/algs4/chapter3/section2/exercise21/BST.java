@@ -5,15 +5,17 @@ import com.claudhart.algs4.chapter3.section1.OrderedST;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings({"DuplicatedCode", "unused"})
 public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, Value> {
     private Node root;
 
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
         private int N;
 
+        @SuppressWarnings("unused")
         public Node(Key key, Value val, int N) {
             this.key = key;
             this.val = val;
@@ -44,6 +46,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         else return x.val;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void put(Key key, Value val) {
         root = put(root, key, val);
@@ -79,6 +82,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         return max(x.right);
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key floor(Key key) {
         Node x = floor(root, key);
@@ -96,6 +100,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         else return x;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key ceiling(Key key) {
         Node x = ceiling(root, key);
@@ -185,6 +190,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         return x;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Iterable<Key> keys() {
         return keys(min(), max());
@@ -216,6 +222,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         return size() == 0;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public int size(Key lo, Key hi) {
         if (lo.compareTo(hi) > 0) return 0;
@@ -242,6 +249,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
     }
 
     // tag::snippet[]
+    @SuppressWarnings("unused")
     public Key randomKey() {
         if (isEmpty()) return null;
         int k = (int) (Math.random() * size());

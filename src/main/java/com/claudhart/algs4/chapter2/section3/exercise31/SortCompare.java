@@ -4,7 +4,7 @@ import com.claudhart.algs4.chapter2.section3.Quick;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class SortCompare {
     public static void main(String[] args) {
         compare();

@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter1.section4.exercise30;
 
 import com.claudhart.algs4.chapter1.section4.exercise29.Steque;
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 import java.util.Stack;
@@ -9,8 +10,8 @@ import java.util.Stack;
 public class Deque<Item> implements Iterable<Item> {
 
     int N = 0;
-    Steque<Item> normal = new Steque<>();
-    Stack<Item> inverse = new Stack<>();
+    final Steque<Item> normal = new Steque<>();
+    final Stack<Item> inverse = new Stack<>();
     STATE state = STATE.NORMAL;
 
     public static void main(String[] args) {
@@ -73,7 +74,7 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         ensure(STATE.NORMAL);
         return normal.iterator();
     }

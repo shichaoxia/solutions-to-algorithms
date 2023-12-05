@@ -5,11 +5,12 @@ import com.claudhart.algs4.chapter3.section1.OrderedST;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings("DuplicatedCode")
 public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, Value> {
     private Node root;
 
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
         private int N;
@@ -211,6 +212,7 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         return get(key) != null;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public boolean isEmpty() {
         return size() == 0;
@@ -272,7 +274,4 @@ public class BST<Key extends Comparable<Key>, Value> implements OrderedST<Key, V
         return sb.toString();
     }
 
-    public static void main(String[] args) {
-
-    }
 }

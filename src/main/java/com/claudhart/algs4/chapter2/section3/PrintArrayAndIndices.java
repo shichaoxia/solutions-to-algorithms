@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter2.section3;
 import edu.princeton.cs.algs4.StdOut;
 
 public class PrintArrayAndIndices {
+    @SuppressWarnings("rawtypes")
     public static void print(Comparable[] a, int lo, int hi, int i, int j, String message) {
         printArray(a);
         StdOut.printf("%n");
@@ -21,6 +22,7 @@ public class PrintArrayAndIndices {
         StdOut.printf("%n");
     }
 
+    @SuppressWarnings("rawtypes")
     public static void print(Comparable[] a, int lo, int lt, int i, int gt, int hi, String message) {
         printArray(a);
         StdOut.printf("%n");
@@ -39,6 +41,7 @@ public class PrintArrayAndIndices {
         StdOut.printf("%n");
     }
 
+    @SuppressWarnings("rawtypes")
     public static void printArray(Comparable[] a) {
         for (int k = 0; k < a.length; k++) {
             StdOut.printf("%s", a[k].toString());
@@ -47,6 +50,7 @@ public class PrintArrayAndIndices {
         }
     }
 
+    @SuppressWarnings({"SameParameterValue", "rawtypes"})
     private static String[] composeIndexArray(Comparable[] a, int i, String iName, int j, String jName) {
         String[] indexArray = new String[a.length + 1];
         for (int k = 0; k < indexArray.length; k++) {
@@ -61,6 +65,7 @@ public class PrintArrayAndIndices {
         return indexArray;
     }
 
+    @SuppressWarnings("rawtypes")
     private static String[] composeIndexArray(Comparable[] a, int i, String iName) {
         String[] indexArray = new String[a.length + 1];
         for (int k = 0; k < indexArray.length; k++)

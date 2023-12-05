@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 @SuppressWarnings("rawtypes")
 public class Stat {
-    public Map<Comparable, Double> count = new TreeMap<>();
+    public final Map<Comparable, Double> count = new TreeMap<>();
 
     public static Map<Comparable, Double> getAvgMap(List<Map<Comparable, Double>> maps) {
         Map<Comparable, Double> sumMap = new HashMap<>();

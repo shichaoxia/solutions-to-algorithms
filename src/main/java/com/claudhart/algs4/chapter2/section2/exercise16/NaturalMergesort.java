@@ -26,7 +26,7 @@ public class NaturalMergesort {
         merge(a, hi);
     }
 
-    @SuppressWarnings({"DuplicatedCode", "ManualArrayCopy"})
+    @SuppressWarnings({"DuplicatedCode", "ManualArrayCopy", "GrazieInspection"})
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi].
         int i = lo, j = mid + 1;

@@ -2,12 +2,15 @@ package com.claudhart.algs4.chapter1.section2.exercise13;
 
 import edu.princeton.cs.algs4.Date;
 
+@SuppressWarnings("unused")
 public class Exercise13 {
+    @SuppressWarnings("DuplicatedCode")
     public static class Transaction implements Comparable<Transaction> {
         private final String who; // customer
         private final Date when; // date
         private final double amount; // amount
 
+        @SuppressWarnings("unused")
         public Transaction(String who, Date when, double amount) {
             if (Double.isNaN(amount) || Double.isInfinite(amount))
                 throw new IllegalArgumentException("Amount cannot be NaN or infinite");
@@ -16,6 +19,7 @@ public class Exercise13 {
             this.amount = amount;
         }
 
+        @SuppressWarnings("unused")
         public Transaction(String transaction) {
             String[] a = transaction.split("\\s+");
             who = a[0];
@@ -25,14 +29,17 @@ public class Exercise13 {
                 throw new IllegalArgumentException("Amount cannot be NaN or infinite");
         }
 
+        @SuppressWarnings("unused")
         public String who() {
             return who;
         }
 
+        @SuppressWarnings("unused")
         public Date when() {
             return when;
         }
 
+        @SuppressWarnings("unused")
         public double amount() {
             return amount;
         }

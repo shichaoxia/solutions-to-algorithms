@@ -74,6 +74,7 @@ public class LinkedList {
         return l;
     }
 
+    @SuppressWarnings("unused")
     public LinkedList addFirst(Comparable item) {
         Node newFirst = new Node();
         newFirst.item = item;

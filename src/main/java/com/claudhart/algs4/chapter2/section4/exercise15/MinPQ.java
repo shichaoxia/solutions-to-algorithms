@@ -2,8 +2,7 @@ package com.claudhart.algs4.chapter2.section4.exercise15;
 
 @SuppressWarnings("DuplicatedCode")
 public class MinPQ<Key extends Comparable<Key>> {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Key[] pq;
+    private final Key[] pq;
     private int N = 0;
 
     @SuppressWarnings("unchecked")
@@ -19,10 +18,12 @@ public class MinPQ<Key extends Comparable<Key>> {
         System.out.println(pq.check());
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }

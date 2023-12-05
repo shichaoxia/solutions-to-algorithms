@@ -5,6 +5,7 @@ import com.claudhart.algs4.chapter1.section3.Stack;
 import com.claudhart.algs4.chapter1.section4.Stopwatch;
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class ResizingArraysVersusLinkedLists {
 
     public static void main(String[] args) {

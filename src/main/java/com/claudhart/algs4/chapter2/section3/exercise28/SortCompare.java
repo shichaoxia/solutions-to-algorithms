@@ -2,7 +2,7 @@ package com.claudhart.algs4.chapter2.section3.exercise28;
 
 import edu.princeton.cs.algs4.StdOut;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class SortCompare {
 
     public static void main(String[] args) {

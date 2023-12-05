@@ -26,7 +26,7 @@ public class Exercise17 {
         }
 
         public static Transaction[] readTransactions() {
-            Queue<Transaction> q = new Queue<Transaction>();
+            Queue<Transaction> q = new Queue<>();
             String input = StdIn.readAll();
             String[] transactions = input.split(",");
             for (String t : transactions)

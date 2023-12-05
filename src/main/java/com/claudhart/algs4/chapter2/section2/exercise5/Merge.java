@@ -23,6 +23,7 @@ public class Merge {
         merge(a, lo, mid, hi);      // Merge results.
     }
 
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         StdOut.printf("merge(%d, %d, %d)%n", lo, mid, hi);
         // Merge a[lo..mid] with a[mid+1..hi].

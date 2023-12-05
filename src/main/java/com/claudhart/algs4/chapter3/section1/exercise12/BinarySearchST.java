@@ -63,7 +63,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Order
     }
 
     public static class Item<Key extends Comparable<Key>, Value> implements Comparable<Item<Key, Value>> {
-        Key key;
+        final Key key;
         Value value;
 
         Item(Key key, Value value) {
@@ -102,6 +102,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Order
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void delete(Key key) {
         throw new UnsupportedOperationException("Not implemented yet");
@@ -133,11 +134,13 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Order
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMin() {
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void deleteMax() {
         throw new UnsupportedOperationException("Not implemented yet");

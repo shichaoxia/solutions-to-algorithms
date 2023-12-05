@@ -3,7 +3,9 @@ package com.claudhart.algs4.chapter1.section4;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
+@SuppressWarnings({"DuplicatedCode", "InfiniteLoopStatement"})
 public class DoublingTest {
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static double timeTrial(int N) {
         int MAX = 1_000_000;
         int[] a = new int[N];

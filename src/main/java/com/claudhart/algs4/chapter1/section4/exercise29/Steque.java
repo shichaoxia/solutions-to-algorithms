@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter1.section4.exercise29;
 
 import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 
@@ -52,7 +53,7 @@ public class Steque<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         ensure(STATE.INVERSE);
         return inverseStack.iterator();
     }

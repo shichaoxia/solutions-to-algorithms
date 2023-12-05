@@ -8,6 +8,7 @@ public class FixedCapacityStackOfStrings {
         a = new String[cap];
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public boolean isEmpty() {
         return N == 0;
     }

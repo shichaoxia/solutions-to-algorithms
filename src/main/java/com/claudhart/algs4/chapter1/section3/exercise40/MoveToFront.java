@@ -4,6 +4,7 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 public class MoveToFront {
+    @SuppressWarnings("DataFlowIssue")
     public static void main(String[] args) {
         String[] a = null;
         while (!StdIn.isEmpty()) {

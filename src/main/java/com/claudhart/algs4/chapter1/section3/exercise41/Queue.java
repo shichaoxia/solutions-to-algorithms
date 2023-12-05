@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section3.exercise41;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 public class Queue<Item> implements Iterable<Item> {
     private Node first;
@@ -43,6 +44,7 @@ public class Queue<Item> implements Iterable<Item> {
         return first == null;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -81,7 +83,7 @@ public class Queue<Item> implements Iterable<Item> {
         return "Queue <[" + s + "]<@" + System.identityHashCode(this);
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ListIterator();
     }
 

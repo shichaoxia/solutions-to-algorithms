@@ -1,5 +1,6 @@
 package com.claudhart.algs4.chapter1.section3.exercise1;
 
+@SuppressWarnings("unused")
 public class Exercise1 {
     public static class FixedCapacityStackOfStrings {
 
@@ -10,10 +11,12 @@ public class Exercise1 {
             a = new String[cap];
         }
 
+        @SuppressWarnings("unused")
         public boolean isEmpty() {
             return N == 0;
         }
 
+        @SuppressWarnings("unused")
         public int size() {
             return N;
         }
@@ -22,6 +25,7 @@ public class Exercise1 {
             a[N++] = item;
         }
 
+        @SuppressWarnings("unused")
         public String pop() {
             return a[--N];
         }

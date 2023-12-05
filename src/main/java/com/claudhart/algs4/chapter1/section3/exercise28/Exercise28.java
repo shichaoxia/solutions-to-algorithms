@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter1.section3.exercise28;
 
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("DuplicatedCode")
 public class Exercise28 {
 
     public static int max(Node node) {
@@ -16,6 +17,7 @@ public class Exercise28 {
         return max(node.next, max);
     }
 
+    @SuppressWarnings("DuplicatedCode")
     public static class LinkedList {
 
         private Node first;
@@ -29,13 +31,13 @@ public class Exercise28 {
 
         @Override
         public String toString() {
-            String s = "";
+            StringBuilder s = new StringBuilder();
             Node i = first;
             while (i != null) {
-                s = i.item + " " + s;
+                s.insert(0, i.item + " ");
                 i = i.next;
             }
-            s = s.stripTrailing();
+            s = new StringBuilder(s.toString().stripTrailing());
             return "LinkedList [" + s + "](first)@" + System.identityHashCode(this);
         }
     }

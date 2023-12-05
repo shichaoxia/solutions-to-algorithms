@@ -4,8 +4,7 @@ import java.util.*;
 
 @SuppressWarnings({"unused", "DuplicatedCode"})
 public class MaxPQ<Key extends Comparable<Key>> {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Key[] pq;
+    private final Key[] pq;
     private int N = 0;
 
     @SuppressWarnings("unchecked")

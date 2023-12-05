@@ -7,6 +7,7 @@ public class Exercise26 {
         l.remove(key);
     }
 
+    @SuppressWarnings("DuplicatedCode")
     public static class LinkedList<Item> {
         class Node {
             Item item;
@@ -58,13 +59,13 @@ public class Exercise26 {
 
         @Override
         public String toString() {
-            String s = "";
+            StringBuilder s = new StringBuilder();
             Node i = first;
             while (i != null) {
-                s = i.item + " " + s;
+                s.insert(0, i.item + " ");
                 i = i.next;
             }
-            s = s.stripTrailing();
+            s = new StringBuilder(s.toString().stripTrailing());
             return "LinkedList [" + s + "](first)@" + System.identityHashCode(this);
         }
     }

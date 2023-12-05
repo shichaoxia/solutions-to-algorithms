@@ -1,14 +1,11 @@
 package com.claudhart.algs4.chapter2.section3.exercise2;
 
-import com.claudhart.algs4.chapter2.section3.PrintArrayAndIndices;
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode", "unchecked"})
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class Quick {
 
     private static Map<Comparable, Integer> exchStat;
@@ -18,6 +15,7 @@ public class Quick {
         sort(a, 0, a.length - 1);
     }
 
+    @SuppressWarnings("CommentedOutCode")
     private static void sort(Comparable[] a, int lo, int hi) {
         // StdOut.printf(">Sort %d, %d%n", lo, hi);
         if (hi <= lo) {
@@ -30,6 +28,7 @@ public class Quick {
         sort(a, j + 1, hi);
     }
 
+    @SuppressWarnings({"CommentedOutCode", "StatementWithEmptyBody"})
     private static int partition(Comparable[] a, int lo, int hi) {
         int i = lo, j = hi + 1;
         Comparable v = a[lo];

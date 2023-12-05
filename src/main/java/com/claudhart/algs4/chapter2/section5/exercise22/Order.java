@@ -1,5 +1,7 @@
 package com.claudhart.algs4.chapter2.section5.exercise22;
 
+import org.jetbrains.annotations.NotNull;
+
 class Order implements Comparable<Order> {
     private final String stockName;
     private final boolean buyOrder;
@@ -34,7 +36,7 @@ class Order implements Comparable<Order> {
     }
 
     @Override
-    public int compareTo(Order other) {
+    public int compareTo(@NotNull Order other) {
         if (buyOrder && other.buyOrder) {
             return Double.compare(other.price, price);
         } else if (!buyOrder && !other.buyOrder) {

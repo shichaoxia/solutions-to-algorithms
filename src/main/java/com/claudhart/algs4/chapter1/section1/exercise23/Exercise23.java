@@ -8,8 +8,6 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
-import static com.claudhart.algs4.chapter1.section1.BinarySearch.rank;
-
 public class Exercise23 {
 
     public static void main(String[] args) {

@@ -2,13 +2,14 @@ package com.claudhart.algs4.chapter1.section4.exercise27;
 
 import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 
 public class Queue<Item> implements Iterable<Item> {
     int N = 0;
-    Stack<Item> enqueueStack = new Stack<>();
-    Stack<Item> dequeueStack = new Stack<>();
+    final Stack<Item> enqueueStack = new Stack<>();
+    final Stack<Item> dequeueStack = new Stack<>();
     STATE state = STATE.ENQUEUE;
 
     public static void main(String[] args) {
@@ -44,7 +45,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         ensure(STATE.DEQUEUE);
         return dequeueStack.iterator();
     }

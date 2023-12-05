@@ -5,6 +5,7 @@ import com.claudhart.algs4.chapter3.section1.ST;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("DuplicatedCode")
 public class CachedSequentialSearchST<Key, Value> implements ST<Key, Value> {
     private Node first;
     private int N;
@@ -106,7 +107,7 @@ public class CachedSequentialSearchST<Key, Value> implements ST<Key, Value> {
     }
 
     private class Node {
-        Key key;
+        final Key key;
         Value value;
         Node next;
 

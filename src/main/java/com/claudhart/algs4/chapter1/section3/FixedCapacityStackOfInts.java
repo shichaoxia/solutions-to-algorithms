@@ -12,6 +12,7 @@ public class FixedCapacityStackOfInts {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -20,6 +21,7 @@ public class FixedCapacityStackOfInts {
         a[N++] = item;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public int pop() {
         return a[--N];
     }

@@ -3,9 +3,7 @@ package com.claudhart.algs4.chapter2.section3.exercise23;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
 
-import static com.claudhart.algs4.chapter2.section3.exercise23.Quick3way.sort;
-
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class SortCompare {
 
     private static final String originalAlg = "quick3way";

@@ -9,10 +9,12 @@ public class Queue<Item> {
     private final Stack<Item> s2 = new Stack<>();
     private int N;
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -24,6 +26,7 @@ public class Queue<Item> {
         s1.push(item);
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item dequeue() {
         if (s1.isEmpty() && s2.isEmpty())
             return null;

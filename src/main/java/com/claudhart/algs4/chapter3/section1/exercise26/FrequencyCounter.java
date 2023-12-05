@@ -9,10 +9,11 @@ import java.util.*;
 
 public class FrequencyCounter {
 
-    int minLen;
-    ST<String, Integer> st;
-    File file;
-    String[] list;
+    @SuppressWarnings("unused")
+    final int minLen;
+    final ST<String, Integer> st;
+    final File file;
+    final String[] list;
 
 
     public FrequencyCounter(int minLen, String file, ST<String, Integer> st, String[] list) {

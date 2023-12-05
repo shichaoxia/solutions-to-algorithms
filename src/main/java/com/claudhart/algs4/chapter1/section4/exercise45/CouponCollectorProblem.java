@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class CouponCollectorProblem {
+    @SuppressWarnings("unused")
     public static int numbersBeforeAll(int N) {
         Set<Integer> s = new HashSet<>();
         for (int i = 0; i < N; i++) {

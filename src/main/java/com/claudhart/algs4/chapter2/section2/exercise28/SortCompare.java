@@ -1,14 +1,10 @@
 package com.claudhart.algs4.chapter2.section2.exercise28;
 
 
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 @SuppressWarnings("DuplicatedCode")
 public class SortCompare {
@@ -19,6 +15,7 @@ public class SortCompare {
         return timer.elapsedTime();
     }
 
+    @SuppressWarnings("unused")
     public static double timeRandomInput(String alg, int N, int T) {
         double total = 0.0;
         Double[] a = new Double[N];
@@ -30,6 +27,7 @@ public class SortCompare {
         return total;
     }
 
+    @SuppressWarnings("CommentedOutCode")
     public static void main(String[] args) {
 //        String alg1 = "Merge";
 //        String alg2 = "MergeBU";

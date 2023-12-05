@@ -3,7 +3,7 @@ package com.claudhart.algs4.chapter2.section4.exercise35;
 import java.util.Arrays;
 
 public class Sample {
-    Node[] p;  // p[0] is not used
+    final Node[] p;  // p[0] is not used
 
     public Sample(double[] p) {
         this.p = new Node[p.length + 1];

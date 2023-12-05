@@ -68,27 +68,20 @@ public class Quick {
         for (int i = 0; i < 6; i++) StdOut.println(trials[i]);
     }
 
-    private static class Trial implements Comparable<Trial> {
-        String perm;
-        double comparesNum;
-
-        public Trial(String perm, double comparesNum) {
-            this.perm = perm;
-            this.comparesNum = comparesNum;
-        }
+    private record Trial(String perm, double comparesNum) implements Comparable<Trial> {
 
         @Override
-        public int compareTo(@NotNull Quick.Trial o) {
-            return Double.compare(comparesNum, o.comparesNum);
-        }
+            public int compareTo(@NotNull Quick.Trial o) {
+                return Double.compare(comparesNum, o.comparesNum);
+            }
 
-        @Override
-        public String toString() {
-            return "Trial{" +
-                    "perm='" + perm + '\'' +
-                    ", comparesNum=" + comparesNum +
-                    '}';
+            @Override
+            public String toString() {
+                return "Trial{" +
+                        "perm='" + perm + '\'' +
+                        ", comparesNum=" + comparesNum +
+                        '}';
+            }
         }
-    }
 
 }

@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
-@SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class Quick {
     // tag::snippet[]
     public static void sort(Comparable[] a) {

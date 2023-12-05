@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdRandom;
 
 import java.awt.*;
 
-@SuppressWarnings({"rawtypes", "unchecked"})
+@SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
 public class Merge {
 
     public static int arrayAccessCount = 0;
@@ -26,6 +26,7 @@ public class Merge {
         merge(a, lo, mid, hi);      // Merge results.
     }
 
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi].
         int i = lo, j = mid + 1;

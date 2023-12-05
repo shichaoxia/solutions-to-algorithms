@@ -3,11 +3,12 @@ package com.claudhart.algs4.chapter3.section2.exercise12;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@SuppressWarnings("DuplicatedCode")
 public class BST<Key extends Comparable<Key>, Value> {
     private Node root;
 
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
 
@@ -80,6 +81,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public Key floor(Key key) {
         Node x = floor(root, key);
         if (x == null) return null;
@@ -114,6 +116,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public void deleteMin() {
         root = deleteMin(root);
     }
@@ -125,6 +128,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public void deleteMax() {
         root = deleteMax(root);
     }
@@ -136,6 +140,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public void delete(Key key) {
         root = delete(root, key);
     }
@@ -157,6 +162,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public Iterable<Key> keys() {
         return keys(min(), max());
     }
@@ -178,11 +184,13 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
 
+    @SuppressWarnings("unused")
     public boolean contains(Key key) {
         return get(key) != null;
     }
 
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return size() == 0;
     }
@@ -205,6 +213,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         return sb.toString();
     }
 
+    @SuppressWarnings("unused")
     private static <T> void assertEqual(T actual, T expected) {
         if (!actual.equals(expected)) {
             throw new AssertionError("Expected: " + expected + ", but was: " + actual);

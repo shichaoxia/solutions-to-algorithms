@@ -2,12 +2,13 @@ package com.claudhart.algs4.chapter3.section2.exercise8;
 
 import java.util.stream.IntStream;
 
+@SuppressWarnings("DuplicatedCode")
 public class BST<Key extends Number & Comparable<Key>, Value> {
     private Node root;
     private int getCompareCount = 0;
 
     private class Node {
-        private Key key;
+        private final Key key;
         private Value val;
         private Node left, right;
         private int N;
@@ -26,6 +27,7 @@ public class BST<Key extends Number & Comparable<Key>, Value> {
         }
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return size(root);
     }
@@ -35,6 +37,7 @@ public class BST<Key extends Number & Comparable<Key>, Value> {
         else return x.N;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Value get(Key key) {
         return get(root, key);
     }
@@ -52,6 +55,7 @@ public class BST<Key extends Number & Comparable<Key>, Value> {
         return k1.compareTo(k2);
     }
 
+    @SuppressWarnings("unused")
     public void put(Key key, Value val) {
         root = put(root, key, val);
     }
@@ -66,6 +70,7 @@ public class BST<Key extends Number & Comparable<Key>, Value> {
         return x;
     }
 
+    @SuppressWarnings("unused")
     public void printTree() {
         printTree(root, "", true, false, false);
     }

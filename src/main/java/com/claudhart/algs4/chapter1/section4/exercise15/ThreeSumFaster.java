@@ -10,12 +10,14 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
+@SuppressWarnings({"DuplicatedCode", "InfiniteLoopStatement"})
 public class ThreeSumFaster {
+    @SuppressWarnings("UnusedReturnValue")
     public static int count(int[] a) {
         int N = a.length;
         int cnt = 0;
 
-        List<Map<Integer, Integer>> maps = new ArrayList<Map<Integer, Integer>>();
+        List<Map<Integer, Integer>> maps = new ArrayList<>();
 
         for (int i = 0; i < N; i++) {
             Map<Integer, Integer> map = new HashMap<>();
@@ -35,6 +37,7 @@ public class ThreeSumFaster {
         return cnt;
     }
 
+    @SuppressWarnings("unused")
     public static void test() {
         int[] a = { -2, -1, -1, -1, 0, 1, 1, 2, 3, 4 };
         count(a);
@@ -43,6 +46,7 @@ public class ThreeSumFaster {
         count(b);
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static double timeTrial(int N) {
         int MAX = 1_000_000;
         int[] a = new int[N];

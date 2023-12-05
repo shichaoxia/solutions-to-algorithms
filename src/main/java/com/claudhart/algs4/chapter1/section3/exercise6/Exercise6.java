@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise6 {
     public static void reverse(Queue<String> q) {
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
         while (!q.isEmpty())
             stack.push(q.dequeue());
         while (!stack.isEmpty())

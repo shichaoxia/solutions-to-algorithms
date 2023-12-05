@@ -2,7 +2,6 @@ package com.claudhart.algs4.chapter2.section4.exercise38;
 
 import com.claudhart.algs4.chapter1.section4.Stopwatch;
 import com.claudhart.algs4.chapter2.section4.HeapsortZero;
-import com.claudhart.algs4.chapter2.section4.exercise35.Sample;
 
 import java.util.Arrays;
 

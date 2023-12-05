@@ -3,7 +3,9 @@ package com.claudhart.algs4.chapter1.section3.exercise31;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings({"DuplicatedCode", "ClassEscapesDefinedScope"})
 public class LinkedList<Item> implements Iterable<Item> {
     private class DoubleNode {
         private Item item;
@@ -125,13 +127,13 @@ public class LinkedList<Item> implements Iterable<Item> {
 
     @Override
     public String toString() {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         DoubleNode current = last;
         while (current != null) {
-            s += " " + current.item;
+            s.append(" ").append(current.item);
             current = current.pre;
         }
-        return s;
+        return s.toString();
     }
 
     public static void main(String[] args) {
@@ -152,7 +154,7 @@ public class LinkedList<Item> implements Iterable<Item> {
         StdOut.println(l);
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new LinkedListIterator();
     }
 

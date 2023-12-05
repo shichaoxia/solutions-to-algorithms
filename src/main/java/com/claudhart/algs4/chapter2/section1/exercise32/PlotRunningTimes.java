@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@SuppressWarnings("DuplicatedCode")
 public class PlotRunningTimes {
     public static double time(String alg, Double[] a) {
         Stopwatch timer = new Stopwatch();

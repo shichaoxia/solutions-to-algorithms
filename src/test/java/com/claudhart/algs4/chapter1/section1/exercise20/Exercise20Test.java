@@ -1,7 +1,5 @@
 package com.claudhart.algs4.chapter1.section1.exercise20;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

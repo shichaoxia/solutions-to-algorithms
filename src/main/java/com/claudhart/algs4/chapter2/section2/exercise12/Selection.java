@@ -21,6 +21,7 @@ public class Selection {
         a[j] = t;
     }
 
+    @SuppressWarnings("unused")
     public static <T extends Comparable<T>> boolean isSorted(T[] a) {
         for (int i = 1; i < a.length; i++)
             if (less(a[i], a[i - 1])) return false;

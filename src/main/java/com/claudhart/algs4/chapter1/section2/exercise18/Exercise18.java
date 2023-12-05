@@ -1,5 +1,6 @@
 package com.claudhart.algs4.chapter1.section2.exercise18;
 
+@SuppressWarnings("unused")
 public class Exercise18 {
 
     public static class Accumulator {
@@ -13,6 +14,7 @@ public class Exercise18 {
             m = m + (x - m) / N;
         }
 
+        @SuppressWarnings("unused")
         public double mean() {
             return m;
         }

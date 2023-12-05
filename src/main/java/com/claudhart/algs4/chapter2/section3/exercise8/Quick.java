@@ -3,6 +3,8 @@ package com.claudhart.algs4.chapter2.section3.exercise8;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
+import java.util.Arrays;
+
 @SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
 public class Quick {
 
@@ -60,7 +62,7 @@ public class Quick {
         int totalComparesNum = 0;
 
         Integer[] a = new Integer[N];
-        for (int i = 0; i < N; i++) a[i] = 0;
+        Arrays.fill(a, 0);
 
         for (int i = 0; i < T; i++) {
             int comparesNum = sort(a);

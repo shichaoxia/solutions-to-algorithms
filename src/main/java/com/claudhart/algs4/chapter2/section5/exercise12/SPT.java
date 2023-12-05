@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.MinPQ;
 
 public class SPT {
 
-    MinPQ<Job> pq = new MinPQ<>();
+    final MinPQ<Job> pq = new MinPQ<>();
 
     public static void main(String[] args) {
         SPT spt = new SPT();

@@ -63,6 +63,7 @@ public class ArrayST<Key, Value> implements ST<Key, Value> {
         return values[i];
     }
 
+    @SuppressWarnings("unused")
     @Override
     public void delete(Key key) {
         if (isEmpty()) return;

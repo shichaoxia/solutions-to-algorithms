@@ -1,7 +1,8 @@
 package com.claudhart.algs4.chapter2.section4;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class Heapsort {
+    @SuppressWarnings("unused")
     public static void sort(Comparable[] a) {
         int N = a.length;
         for (int k = N / 2; k >= 1; k--)

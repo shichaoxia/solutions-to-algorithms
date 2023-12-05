@@ -5,7 +5,9 @@ import com.claudhart.algs4.chapter1.section4.ThreeSum;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
+@SuppressWarnings("InfiniteLoopStatement")
 public class DoublingRatio {
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static double[] timeTrial(int N) {
         int MAX = 1_000_000;
         int[] a = new int[N];

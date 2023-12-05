@@ -19,6 +19,7 @@ public class FrequencyCounter {
                 return null;
             }
 
+            @SuppressWarnings("unused")
             @Override
             public void delete(String s) {
 
@@ -29,6 +30,7 @@ public class FrequencyCounter {
                 return false;
             }
 
+            @SuppressWarnings("unused")
             @Override
             public boolean isEmpty() {
                 return false;

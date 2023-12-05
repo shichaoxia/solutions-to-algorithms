@@ -10,6 +10,7 @@ public interface ST<Key, Value> {
 
     boolean contains(Key key);
 
+    @SuppressWarnings("unused")
     boolean isEmpty();
 
     int size();

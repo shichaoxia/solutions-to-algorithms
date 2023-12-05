@@ -19,7 +19,7 @@ public class Merge {
         merge(a, lo, mid, hi);      // Merge results.
     }
 
-    @SuppressWarnings("DuplicatedCode")
+    @SuppressWarnings({"DuplicatedCode", "GrazieInspection"})
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         // Merge a[lo..mid] with a[mid+1..hi].
         int i = lo, j = mid + 1;

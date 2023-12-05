@@ -3,7 +3,9 @@ package com.claudhart.algs4.chapter1.section3.exercise38;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("DuplicatedCode")
 public class LinkedList<Item> implements Iterable<Item> {
 
     public DoubleNode<Item> first;
@@ -30,12 +32,14 @@ public class LinkedList<Item> implements Iterable<Item> {
         insertAfter(last, item);
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item removeFirst() {
         if (size() == 0)
             return null;
         return remove(first);
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item removeLast() {
         if (size() == 0)
             return null;
@@ -43,7 +47,7 @@ public class LinkedList<Item> implements Iterable<Item> {
     }
 
     private void addToEmpty(Item item) {
-        DoubleNode<Item> newNode = new DoubleNode<Item>();
+        DoubleNode<Item> newNode = new DoubleNode<>();
         newNode.item = item;
         first = newNode;
         last = newNode;
@@ -62,7 +66,7 @@ public class LinkedList<Item> implements Iterable<Item> {
     }
 
     public void insertBefore(DoubleNode<Item> node, Item item) {
-        DoubleNode<Item> newNode = new DoubleNode<Item>();
+        DoubleNode<Item> newNode = new DoubleNode<>();
         newNode.item = item;
         N += 1;
         if (node == first) {
@@ -75,7 +79,7 @@ public class LinkedList<Item> implements Iterable<Item> {
 
     public void insertAfter(DoubleNode<Item> node, Item item) {
         if (node == last) {
-            DoubleNode<Item> newNode = new DoubleNode<Item>();
+            DoubleNode<Item> newNode = new DoubleNode<>();
             newNode.item = item;
             connect(node, newNode, null);
             last = newNode;
@@ -120,14 +124,14 @@ public class LinkedList<Item> implements Iterable<Item> {
 
     @Override
     public String toString() {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         DoubleNode<Item> current = first;
         while (current != null) {
-            s += " " + current.item;
+            s.append(" ").append(current.item);
             current = current.next;
         }
-        s = s.trim();
-        return s;
+        s = new StringBuilder(s.toString().trim());
+        return s.toString();
     }
 
     public static void main(String[] args) {
@@ -148,7 +152,7 @@ public class LinkedList<Item> implements Iterable<Item> {
         StdOut.println(l);
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new LinkedListIterator();
     }
 

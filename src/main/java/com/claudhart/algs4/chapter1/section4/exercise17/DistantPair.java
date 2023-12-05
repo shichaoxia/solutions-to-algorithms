@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter1.section4.exercise17;
 
 import edu.princeton.cs.algs4.StdOut;
 
+@SuppressWarnings("ClassEscapesDefinedScope")
 public class DistantPair {
 
     public static Pair find(double[] a) {

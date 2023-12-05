@@ -3,7 +3,8 @@ package com.claudhart.algs4.chapter2.section1.exercise38;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class StringKeyOneDoubleValue implements Comparable<StringKeyOneDoubleValue> {
-    String key = SortCompare.randomString(10);
+    final String key = SortCompare.randomString(10);
+    @SuppressWarnings("unused")
     double val = StdRandom.uniform();
 
     @Override

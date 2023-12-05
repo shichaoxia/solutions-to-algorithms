@@ -96,19 +96,12 @@ public class Select {
     }
 
     @SuppressWarnings("unchecked")
-    static class Entry implements Comparable<Entry> {
-        Comparable value;
-        int index;
-
-        public Entry(Comparable value, int index) {
-            this.value = value;
-            this.index = index;
-        }
+    record Entry(Comparable value, int index) implements Comparable<Entry> {
 
         @Override
-        public int compareTo(Select.Entry o) {
-            return this.value.compareTo(o.value);
+            public int compareTo(Select.Entry o) {
+                return this.value.compareTo(o.value);
+            }
         }
-    }
 
 }

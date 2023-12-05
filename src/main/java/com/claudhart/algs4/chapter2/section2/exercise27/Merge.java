@@ -24,7 +24,6 @@ public class Merge {
         merge(a, lo, mid, hi);
     }
 
-    @SuppressWarnings("DuplicatedCode")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
         for (int k = lo; k <= hi; k++)
             aux[k] = a[k];

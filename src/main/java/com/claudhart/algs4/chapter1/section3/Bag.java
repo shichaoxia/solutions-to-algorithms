@@ -1,16 +1,21 @@
 package com.claudhart.algs4.chapter1.section3;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Iterator;
 
+@SuppressWarnings("unused")
 public class Bag<Item> implements Iterable<Item> {
 
     private Node first;
 
+    @SuppressWarnings("unused")
     private class Node {
         Item item;
         Node next;
     }
 
+    @SuppressWarnings("unused")
     public void add(Item item) {
         Node oldFirst = first;
         first = new Node();
@@ -18,10 +23,11 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldFirst;
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ListIterator();
     }
 
+    @SuppressWarnings("unused")
     private class ListIterator implements Iterator<Item> {
         private Node current = first;
 

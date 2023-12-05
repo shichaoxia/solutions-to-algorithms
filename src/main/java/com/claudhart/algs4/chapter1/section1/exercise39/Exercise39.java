@@ -6,6 +6,7 @@ import com.claudhart.algs4.chapter1.section1.exercise38.Exercise38;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class Exercise39 {
+    @SuppressWarnings("unused")
     public static int[][] experiment(int T) {
         int[] Ns = { 1000, 10000, 100000, 1000000 };
         int[][] quantities = new int[T][Ns.length];
@@ -29,11 +30,12 @@ public class Exercise39 {
         return quantities;
     }
 
+    @SuppressWarnings({"unused", "ResultOfMethodCallIgnored"})
     public static int[] probabilityExperiment(int[][] e) {
         int[] avg = new int[e[0].length];
         for (int i = 0; i < e[0].length; i++) {
-            for (int j = 0; j < e.length; j++) {
-                avg[i] += e[j][i];
+            for (int[] ints : e) {
+                avg[i] += ints[i];
             }
         }
         Arrays.stream(avg).map(i -> i / e.length);

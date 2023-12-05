@@ -6,6 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 import java.awt.*;
 
+@SuppressWarnings("DuplicatedCode")
 public class QuickUnionUF {
     private final int[] id;
     private int count;

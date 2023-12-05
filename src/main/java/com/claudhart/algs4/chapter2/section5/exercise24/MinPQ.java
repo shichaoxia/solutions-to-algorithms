@@ -10,10 +10,12 @@ public class MinPQ<Key extends Comparable<Key>> {
         pq = (Wrapper<Key>[]) new Wrapper[maxN + 1];
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -61,8 +63,8 @@ public class MinPQ<Key extends Comparable<Key>> {
     }
 
     public static class Wrapper<Key extends Comparable<Key>> implements Comparable<Wrapper<Key>> {
-        Key content;
-        int order;
+        final Key content;
+        final int order;
 
         public Wrapper(Key content, int order) {
             this.content = content;
@@ -80,9 +82,10 @@ public class MinPQ<Key extends Comparable<Key>> {
         }
     }
 
+    @SuppressWarnings("ClassCanBeRecord")
     public static class Item implements Comparable<Item> {
-        public int id;
-        public String content;
+        public final int id;
+        public final String content;
 
         public Item(String content, int id) {
             this.content = content;

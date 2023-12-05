@@ -1,11 +1,13 @@
 package com.claudhart.algs4.chapter1.section2.exercise19;
 
+@SuppressWarnings("unused")
 public class Exercise19 {
     public static class Date {
         private final int month;
         private final int day;
         private final int year;
 
+        @SuppressWarnings("unused")
         public Date(String date) {
             String[] fields = date.split("/");
             month = Integer.parseInt(fields[0]);
@@ -24,6 +26,7 @@ public class Exercise19 {
         private final Date when;
         private final double amount;
 
+        @SuppressWarnings("unused")
         public Transaction(String transaction) {
             String[] a = transaction.split("\\s+");
             who = a[0];

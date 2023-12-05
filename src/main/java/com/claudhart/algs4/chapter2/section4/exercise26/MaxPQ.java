@@ -2,8 +2,7 @@ package com.claudhart.algs4.chapter2.section4.exercise26;
 
 @SuppressWarnings({"unused", "DuplicatedCode"})
 public class MaxPQ<Key extends Comparable<Key>> {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Key[] pq;
+    private final Key[] pq;
     private int N = 0;
 
     @SuppressWarnings("unchecked")

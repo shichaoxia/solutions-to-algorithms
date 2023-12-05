@@ -3,8 +3,9 @@ package com.claudhart.algs4.chapter2.section3.exercise12;
 import com.claudhart.algs4.chapter2.section3.PrintArrayAndIndices;
 import edu.princeton.cs.algs4.StdOut;
 
-@SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class Quick3way {
+    @SuppressWarnings("CommentedOutCode")
     public static void sort(Comparable[] a) {
         StdOut.printf("Sort: ");
         PrintArrayAndIndices.printArray(a);
@@ -46,6 +47,7 @@ public class Quick3way {
         sort(a, gt + 1, hi);
     }
 
+    @SuppressWarnings("unused")
     public static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
     }

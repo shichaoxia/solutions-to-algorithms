@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
+import org.jetbrains.annotations.NotNull;
 
 public class RandomBag<Item> implements Iterable<Item> {
 
@@ -12,6 +13,7 @@ public class RandomBag<Item> implements Iterable<Item> {
     private Item[] a = (Item[]) new Object[1];
     private int N = 0;
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
@@ -34,7 +36,7 @@ public class RandomBag<Item> implements Iterable<Item> {
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new RandomIterator();
     }
 

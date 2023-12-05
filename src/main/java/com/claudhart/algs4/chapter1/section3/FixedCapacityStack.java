@@ -13,6 +13,7 @@ public class FixedCapacityStack<Item> {
         return N == 0;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -21,6 +22,7 @@ public class FixedCapacityStack<Item> {
         a[N++] = item;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item pop() {
         return a[--N];
     }

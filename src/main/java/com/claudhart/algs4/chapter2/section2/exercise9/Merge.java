@@ -1,6 +1,6 @@
 package com.claudhart.algs4.chapter2.section2.exercise9;
 
-@SuppressWarnings({"rawtypes", "unchecked", "ManualArrayCopy"})
+@SuppressWarnings({"rawtypes", "unchecked", "ManualArrayCopy", "DuplicatedCode"})
 public class Merge {
 
     public static void sort(Comparable[] a, Comparable[] aux) {
@@ -16,6 +16,7 @@ public class Merge {
         merge(a, lo, mid, hi, aux);      // Merge results.
     }
 
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi, Comparable[] aux) {
         // Merge a[lo..mid] with a[mid+1..hi].
         int i = lo, j = mid + 1;

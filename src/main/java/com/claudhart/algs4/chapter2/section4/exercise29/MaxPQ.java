@@ -2,8 +2,7 @@ package com.claudhart.algs4.chapter2.section4.exercise29;
 
 @SuppressWarnings({"unused", "DuplicatedCode"})
 public class MaxPQ {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Item[] pq;
+    private final Item[] pq;
     private int N = 0;
 
     public MaxPQ(int maxN) {

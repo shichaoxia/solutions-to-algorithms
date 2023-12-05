@@ -23,6 +23,7 @@ public class SortCompare {
         return s.elapsedTime();
     }
 
+    @SuppressWarnings("unused")
     private static void compareM() {
         StdOut.printf("%nComparing the performance of different M:%n");
         StdOut.printf("%10s %10s %10s %10s %10s%n", "M\\N", "10^3", "10^4", "10^5", "10^6");

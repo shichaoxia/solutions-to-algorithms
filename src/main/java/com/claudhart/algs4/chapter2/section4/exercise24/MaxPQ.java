@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-@SuppressWarnings({"unused", "DuplicatedCode"})
+@SuppressWarnings({"unused", "ClassEscapesDefinedScope"})
 public class MaxPQ<Key extends Comparable<Key>> {
     // tag::snippet1[]
     private int N = 0;

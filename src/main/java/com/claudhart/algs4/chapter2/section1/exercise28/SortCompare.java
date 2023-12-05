@@ -2,8 +2,7 @@ package com.claudhart.algs4.chapter2.section1.exercise28;
 
 import edu.princeton.cs.algs4.*;
 
-import java.util.Arrays;
-
+@SuppressWarnings("DuplicatedCode")
 public class SortCompare {
     public static double time(String alg, Integer[] a) {
         Stopwatch timer = new Stopwatch();
@@ -29,6 +28,7 @@ public class SortCompare {
         return total;
     }
 
+    @SuppressWarnings("unused")
     public static Integer[] randomArray(int N) {
         Integer[] a = new Integer[N];
         for (int i = 0; i < N; i++)

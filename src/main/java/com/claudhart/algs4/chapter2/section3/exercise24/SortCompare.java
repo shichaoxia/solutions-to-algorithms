@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.Stopwatch;
 
 import static com.claudhart.algs4.chapter2.section3.exercise24.Samplesort.sort;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class SortCompare {
 
     private static final String originalAlg = "quick";

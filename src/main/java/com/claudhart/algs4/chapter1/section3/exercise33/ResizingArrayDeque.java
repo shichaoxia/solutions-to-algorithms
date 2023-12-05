@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section3.exercise33;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 public class ResizingArrayDeque<Item> implements Iterable<Item> {
 
@@ -32,6 +33,7 @@ public class ResizingArrayDeque<Item> implements Iterable<Item> {
         right = bStart;
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
@@ -56,6 +58,7 @@ public class ResizingArrayDeque<Item> implements Iterable<Item> {
         N += 1;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item popLeft() {
         if (size() == 0)
             return null;
@@ -67,6 +70,7 @@ public class ResizingArrayDeque<Item> implements Iterable<Item> {
         return item;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item popRight() {
         if (size() == 0)
             return null;
@@ -80,17 +84,17 @@ public class ResizingArrayDeque<Item> implements Iterable<Item> {
 
     @Override
     public String toString() {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         int current = left + 1;
         while (current != right) {
-            s += " " + a[current];
+            s.append(" ").append(a[current]);
             current += 1;
         }
-        return s;
+        return s.toString();
     }
 
     @Override
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new DequeIterator();
     }
 

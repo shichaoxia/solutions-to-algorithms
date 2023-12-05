@@ -13,6 +13,7 @@ public class Inversions {
      * indices {@code i} and {@code j} such that {@code i < j}
      * and {@code a[i] > a[j]}.
      */
+    @SuppressWarnings("unused")
     public static long count(int[] a) {
         int[] b = Arrays.copyOf(a, a.length);
         int[] aux = new int[a.length];

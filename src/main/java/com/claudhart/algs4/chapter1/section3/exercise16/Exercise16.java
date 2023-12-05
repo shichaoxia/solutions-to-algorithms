@@ -26,7 +26,7 @@ public class Exercise16 {
         }
 
         public static Date[] readDates() {
-            Queue<Date> q = new Queue<Date>();
+            Queue<Date> q = new Queue<>();
             while (!StdIn.isEmpty())
                 q.enqueue(new Date(StdIn.readString()));
 

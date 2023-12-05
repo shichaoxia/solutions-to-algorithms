@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class FrequencyCounter {
 
-    int minLen;
-    ST<String, Integer> st;
-    File file;
+    final int minLen;
+    final ST<String, Integer> st;
+    final File file;
 
     String lastPut = "";
     int putCount = 0;
@@ -53,6 +53,7 @@ public class FrequencyCounter {
         st.put(key, value);
     }
 
+    @SuppressWarnings("unused")
     public String max() {
         String max = "";
         st.put(max, 0);

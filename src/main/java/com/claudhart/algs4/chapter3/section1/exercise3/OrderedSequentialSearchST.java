@@ -5,10 +5,12 @@ import com.claudhart.algs4.chapter3.section1.OrderedST;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> implements OrderedST<Key, Value> {
     private Node first;
     private int size;
 
+    @SuppressWarnings("unused")
     @Override
     public void put(Key key, Value val) {
         if (key == null) throw new IllegalArgumentException("Key cannot be null");
@@ -72,6 +74,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         }
     }
 
+    @SuppressWarnings("unused")
     @Override
     public boolean contains(Key key) {
         return get(key) != null;
@@ -82,17 +85,20 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return size == 0;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public int size() {
         return size;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key min() {
         if (isEmpty()) return null;
         return first.key;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key max() {
         if (isEmpty()) return null;
@@ -103,6 +109,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return curr.key;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key floor(Key key) {
         if (key == null) throw new IllegalArgumentException("Key cannot be null");
@@ -115,6 +122,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return curr.key;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key ceiling(Key key) {
         if (key == null) throw new IllegalArgumentException("Key cannot be null");
@@ -126,6 +134,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return curr.key;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public int rank(Key key) {
         if (key == null) throw new IllegalArgumentException("Key cannot be null");
@@ -139,6 +148,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return -1;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Key select(int k) {
         if (k < 0 || k >= size) throw new IllegalArgumentException("Invalid index");
@@ -174,6 +184,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         size--;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public int size(Key lo, Key hi) {
         if (lo == null || hi == null) throw new IllegalArgumentException("Keys cannot be null");
@@ -190,6 +201,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return count;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Iterable<Key> keys(Key lo, Key hi) {
         if (lo == null || hi == null) throw new IllegalArgumentException("Keys cannot be null");
@@ -206,6 +218,7 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
         return list;
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Iterable<Key> keys() {
         List<Key> list = new ArrayList<>();
@@ -218,10 +231,11 @@ public class OrderedSequentialSearchST<Key extends Comparable<Key>, Value> imple
     }
 
     private class Node {
-        Key key;
+        final Key key;
         Value val;
         Node next;
 
+        @SuppressWarnings("unused")
         public Node(Key key, Value val, Node next) {
             this.key = key;
             this.val = val;

@@ -16,6 +16,7 @@ public class Exercise30 {
         return gcd(p, q) == 1;
     }
 
+    @SuppressWarnings("unused")
     public static Boolean[][] matrix(int N) {
         Boolean[][] a = new Boolean[N][N];
         for (int i = 0; i < N; i++) {

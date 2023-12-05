@@ -3,6 +3,7 @@ package com.claudhart.algs4.chapter1.section3.exercise42;
 import java.util.Iterator;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.jetbrains.annotations.NotNull;
 
 
 public class Stack<Item> implements Iterable<Item> {
@@ -38,10 +39,12 @@ public class Stack<Item> implements Iterable<Item> {
         StdOut.println("t: " + t);
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return first == null;
     }
 
+    @SuppressWarnings("unused")
     public int size() {
         return N;
     }
@@ -54,6 +57,7 @@ public class Stack<Item> implements Iterable<Item> {
         N++;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public Item pop() {
         Item item = first.item;
         first = first.next;
@@ -79,7 +83,7 @@ public class Stack<Item> implements Iterable<Item> {
         return "Stack [" + s + "](top) @" + System.identityHashCode(this);
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ListIterator();
     }
 

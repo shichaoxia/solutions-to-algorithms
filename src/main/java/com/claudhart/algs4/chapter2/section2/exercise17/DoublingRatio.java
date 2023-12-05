@@ -4,7 +4,6 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
-@SuppressWarnings("DuplicatedCode")
 public class DoublingRatio {
     public static void main(String[] args) {
         double previous = time(randomList(500), 1);

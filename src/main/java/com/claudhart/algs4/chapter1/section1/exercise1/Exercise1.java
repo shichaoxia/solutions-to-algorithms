@@ -1,6 +1,6 @@
 package com.claudhart.algs4.chapter1.section1.exercise1;
 
-@SuppressWarnings({"PointlessBooleanExpression", "ConstantConditions", "DuplicateCondition", "PointlessArithmeticExpression"})
+@SuppressWarnings({"PointlessBooleanExpression", "DuplicateCondition", "PointlessArithmeticExpression"})
 public class Exercise1 {
     public static int a() {
         return (0 + 15) / 2;

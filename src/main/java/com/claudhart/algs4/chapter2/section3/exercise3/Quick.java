@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Arrays;
 
-@SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode", "ClassEscapesDefinedScope"})
 public class Quick {
     private static Integer largestExchNum;
     private static Comparable largest;

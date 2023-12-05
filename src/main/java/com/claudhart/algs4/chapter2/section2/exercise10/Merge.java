@@ -24,6 +24,7 @@ public class Merge {
     }
 
     // tag::solution[]
+    @SuppressWarnings("GrazieInspection")
     public static void merge(Comparable[] a, int lo, int mid, int hi) {
 
         leftIncRightDecCopy(a, lo, mid, hi);
@@ -38,6 +39,7 @@ public class Merge {
     /**
      * Copy a[lo..mid] to aux[lo..mid] and a[mid+1..hi] to aux[hi..mid+1].
      */
+    @SuppressWarnings("GrazieInspection")
     public static void leftIncRightDecCopy(Comparable[] a, int lo, int mid, int hi) {
         for (int i = lo; i <= mid; i++)
             aux[i] = a[i];

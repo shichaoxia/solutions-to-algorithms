@@ -6,6 +6,7 @@ import edu.princeton.cs.algs4.StdRandom;
 
 import java.awt.*;
 
+@SuppressWarnings("DuplicatedCode")
 public class Insertion {
 
     private static final int ARRAY_SIZE = 20;

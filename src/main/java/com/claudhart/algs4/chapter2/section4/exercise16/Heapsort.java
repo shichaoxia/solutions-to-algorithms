@@ -1,11 +1,10 @@
 package com.claudhart.algs4.chapter2.section4.exercise16;
 
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Arrays;
 
-@SuppressWarnings({"rawtypes", "DuplicatedCode"})
+@SuppressWarnings({"rawtypes"})
 public class Heapsort {
     private static int compares = 0;
 

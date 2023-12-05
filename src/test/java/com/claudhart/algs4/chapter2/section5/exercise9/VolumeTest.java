@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VolumeTest {
 
+    @SuppressWarnings("ExtractMethodRecommender")
     @Test
     void volume() {
         String input = """

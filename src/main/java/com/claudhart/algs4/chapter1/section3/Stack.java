@@ -1,5 +1,7 @@
 package com.claudhart.algs4.chapter1.section3;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Iterator;
 
 public class Stack<Item> implements Iterable<Item> {
@@ -45,7 +47,7 @@ public class Stack<Item> implements Iterable<Item> {
         return s.substring(0, s.length() - 2);
     }
 
-    public Iterator<Item> iterator() {
+    public @NotNull Iterator<Item> iterator() {
         return new ReverseIterator();
     }
 

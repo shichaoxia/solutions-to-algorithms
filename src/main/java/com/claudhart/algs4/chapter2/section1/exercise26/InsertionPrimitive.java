@@ -1,5 +1,6 @@
 package com.claudhart.algs4.chapter2.section1.exercise26;
 
+@SuppressWarnings("DuplicatedCode")
 public class InsertionPrimitive {
     public static void sort(int[] a) {
         int N = a.length;

@@ -12,6 +12,7 @@ public class Exercise10 {
         private final int[] totalHistory;
         private int opNum;
 
+        @SuppressWarnings("SameParameterValue")
         VisualCounter(int N, int max) {
             this.max = max;
             this.totalHistory = new int[N];
@@ -35,6 +36,7 @@ public class Exercise10 {
             return 0;
         }
 
+        @SuppressWarnings("unused")
         int tally() {
             return totalHistory[opNum - 1];
         }

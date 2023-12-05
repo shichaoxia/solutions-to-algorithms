@@ -1,5 +1,6 @@
 package com.claudhart.algs4.chapter1.section2.exercise16;
 
+@SuppressWarnings("unused")
 public class Exercise16 {
 
     public static class Rational {

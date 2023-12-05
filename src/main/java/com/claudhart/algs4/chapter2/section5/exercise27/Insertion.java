@@ -2,6 +2,7 @@ package com.claudhart.algs4.chapter2.section5.exercise27;
 
 @SuppressWarnings({"rawtypes", "unchecked", "DuplicatedCode"})
 public class Insertion {
+    @SuppressWarnings("unused")
     public static void sort(Comparable[] a) {
         int N = a.length;
         for (int i = 1; i < N; i++) {

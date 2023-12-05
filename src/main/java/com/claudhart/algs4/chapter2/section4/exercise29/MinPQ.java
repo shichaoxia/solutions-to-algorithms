@@ -2,14 +2,14 @@ package com.claudhart.algs4.chapter2.section4.exercise29;
 
 @SuppressWarnings("DuplicatedCode")
 public class MinPQ {
-    @SuppressWarnings("FieldMayBeFinal")
-    private Item[] pq;
+    private final Item[] pq;
     private int N = 0;
 
     public MinPQ(int maxN) {
         pq = new Item[maxN + 1];
     }
 
+    @SuppressWarnings("unused")
     public boolean isEmpty() {
         return N == 0;
     }
