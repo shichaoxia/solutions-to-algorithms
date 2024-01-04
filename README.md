@@ -2,7 +2,7 @@
 
 Solution codes for the Algorithms 4th written by Robert Sedgewick.
 
-Here is the complete solutions with exercises and explanations.
+Here is the complete solutions with exs and explanations.
 
 Prerequisite for running tests：
 
